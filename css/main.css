@@ -140,8 +140,6 @@ p {
 
 
 
-
-
 /* 
 
 <input type="checkbox" id="nav-checkbox" class="nav-checkbox"> <!--id skal bruges til checkboksens (til burger) funktion. Class skal style elementerne -->
@@ -163,9 +161,38 @@ p {
 
 /* FORSIDE */
 
+/* Styling - Baggrundsbillede, på forsiden */
 .forside-img {
     width: 100%; /* Sikrer at billedet bredde følger browserens*/
+    display: block; 
 }
+
+#forside-top {
+    position: relative; 
+    display: inline-block;
+}
+
+/* Styling - knappen "NYHEDER" */
+.nyheder-knap {
+    background-color:var(--grøn); /* Farve på knap */
+    color: var(--hvid); /* Tekstfarve */
+    bottom: -10px; /* Angiver afstanden fra bunden */
+    border-radius: 5px; /* Rundede hjørner */ 
+    right: 70px; /* Angiver afstanden fra højre */
+    font-size: 30px; /* Skriftstørrelse */
+    font-weight: 600; /* Skrifttykkelse*/
+    padding: 10px 20px; /* Indvendig margen */
+    text-decoration: none; /* Fjern understregning */
+    position: absolute;
+    
+    transition: background-color 0.3s; /* Glidende overgang for baggrundsfarve */
+}
+
+/* Effekt ved hover */
+.text-button:hover {
+    background-color: #555; /* Ændret baggrundsfarve ved hover */
+}
+
 
 /*------------------------------------------*/
 
