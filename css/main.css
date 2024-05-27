@@ -17,7 +17,7 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box; /*inkluderer padding og border i elementets samlede bredde og højde*/
+    
     margin: 0; /*fjerner alt margin, som basis*/
     padding: 0; /*fjerner alt padding, som basis*/
     color: var(--moerk-skrift); /* angiver basis tekst-farve*/
@@ -43,7 +43,7 @@
 /* Styling - a-tags/links */
 a {
     text-decoration: none; /* fjerner streger under links */
-    color: inherit; /* fjerner den blå farve i links */
+    color: var(--moerk-skrift); /* fjerner den blå farve i links */
 }
 
 /* Styling - overskrifter */
@@ -98,29 +98,43 @@ p {
 
 /* Styling - navigationsbaren - li */
 .nav-styling li {
-    margin: 20px 20px; /* Afstand mellem li-elementer */
+    margin: 20px 30px; /* Afstand mellem li-elementer */
+    position: relative; /* Angiver korrekt placering af dropdown*/
     transition: transform 0.3s, font-weight 0.3s; /* Overgangseffekt - gør teksten federe, i bevægelse */
 }
 
 /* Effekter - navigationsbaren */
 .nav-styling li:hover {
-    transform: scale(1.1); /* Forstørrer ved hover */
+    transform: scale(1.04); /* Forstørrer ved hover */
     font-weight: bold; /* Tykkelse på font ved hover */
 }
 
-/* Position - dropdown li */
+/* Effekter - Skjul dropdown-menuen som standard */
 .dropdown {
+    display: none; /* Skjuler */
     position: absolute;
-    
+    top: 100%; /* Positioner lige under forældreelementet */
+    list-style: none;
+    padding: 0;
 }
+
+/* Effekter - Vis dropdown-menuen ved hover */
+.nav-styling li:hover .dropdown {
+    display: block; /* Viser elementer*/
+    font-weight: 200; /* Tykkelse på font ved hover */
+}
+
 
 /* Styling - dropdown li */
 .dropdown li {
-    margin-top: 2;
     border-style: solid; /* Angiver streg under elementer */
     border-width: 0 0 0.10rem 0; /* Tykkelse på stregen */
     border-color: var(--brun); /* Farve på stregen */
-    list-style: none;
+    list-style: none; /* Fjerner opstillingspunkter */
+    margin: 0; /* fjerner den margin, som er angivet for navigationsbaren */
+    padding-top: 15px; /* Afstand til ovenforstående element*/
+    padding-bottom: 2px;
+
 }
 
 
