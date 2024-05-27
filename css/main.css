@@ -40,13 +40,13 @@
     --baggrundsfarve: #F6F9F8;
 }
 
-/* Styling af a-tags/links */
+/* Styling - a-tags/links */
 a {
     text-decoration: none; /* fjerner streger under links */
     color: inherit; /* fjerner den blå farve i links */
 }
 
-/* Styling af overskrifter */
+/* Styling - overskrifter */
 h1 { 
     font-family: "Quattrocento", serif;
     font-size: 47px;
@@ -54,7 +54,7 @@ h1 {
     padding-bottom: 20px; /* angiver afstand til nedenforstående*/
 }
 
-/* Styling af under-overskrifter */
+/* Styling - under-overskrifter */
 h2 {
     font-size: 20px; 
     font-weight: 700; /* tykkelse af font */
@@ -62,36 +62,66 @@ h2 {
     color: var(--brun);
 }
 
-/* Styling af citater */
+/* Styling - citater */
 h3 {
     font-size: 16px;
     font-weight: 200; /* tykkelse af font */
     font-style: italic; /* angiver kussiv */
 }
 
-/* Styling af almindelig tekst */
+/* Styling - alm. tekst */
 p {
     padding-bottom: 10px; /* angiver afstand til nedenforstående*/
 }
 
-/* Styling af Logo */
+/* Styling - Logo */
 .logo {
-    width: 50px; /* Justerer bredden på logoet */
+    max-height: 57px; /* størrelse på logo*/
 }
-
-
 
 /*------------------------------------------*/
 
 /* NAVIGATIONSBAR - STYLING OG FUNKTIONALITET */
 
-/* Styling af navigationsbaren */
-nav {
-    position: fixed; /* sikrer at nav følger skærmen, når der scrolles nedad */
+/* Styling - navigations linjen */
+.nav {
     z-index: 999; /* Høj z-index-værdi for at sikre, at det vises over andre elementer */ 
-    padding: 10px 0;
 }
 
+/* Styling - navigationsbaren - ul */
+.nav-styling {
+    display: flex;
+    justify-content: center; /* Centerer ul-elementer */
+    align-items: center; /* Vertikalt centerering */
+    list-style: none;
+}
+
+/* Styling - navigationsbaren - li */
+.nav-styling li {
+    margin: 20px 20px; /* Afstand mellem li-elementer */
+    transition: transform 0.3s, font-weight 0.3s; /* Overgangseffekt - gør teksten federe, i bevægelse */
+}
+
+/* Effekter - navigationsbaren */
+.nav-styling li:hover {
+    transform: scale(1.1); /* Forstørrer ved hover */
+    font-weight: bold; /* Tykkelse på font ved hover */
+}
+
+/* Position - dropdown li */
+.dropdown {
+    position: absolute;
+    
+}
+
+/* Styling - dropdown li */
+.dropdown li {
+    margin-top: 2;
+    border-style: solid; /* Angiver streg under elementer */
+    border-width: 0 0 0.10rem 0; /* Tykkelse på stregen */
+    border-color: var(--brun); /* Farve på stregen */
+    list-style: none;
+}
 
 
 
@@ -114,6 +144,14 @@ nav {
 
 
 
+
+/*------------------------------------------*/
+
+/* FORSIDE */
+
+.forside-img {
+    width: 100%; /* Sikrer at billedet bredde følger browserens*/
+}
 
 /*------------------------------------------*/
 
