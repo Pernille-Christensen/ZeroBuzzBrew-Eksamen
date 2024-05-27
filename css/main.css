@@ -17,6 +17,7 @@
 *,
 *::before,
 *::after {
+    box-sizing: border-box; /*inkluderer padding og border i elementets samlede bredde og højde*/
     margin: 0; /*fjerner alt margin, som basis*/
     padding: 0; /*fjerner alt padding, som basis*/
     color: var(--moerk-skrift); /* angiver basis tekst-farve*/
@@ -68,13 +69,48 @@ h3 {
     font-style: italic; /* angiver kussiv */
 }
 
+/* Styling af almindelig tekst */
 p {
     padding-bottom: 10px; /* angiver afstand til nedenforstående*/
 }
 
+/* Styling af Logo */
+.logo {
+    width: 50px; /* Justerer bredden på logoet */
+}
+
+
+
 /*------------------------------------------*/
 
-/* FUNKTIONER - STYLING AF NAV */
+/* NAVIGATIONSBAR - STYLING OG FUNKTIONALITET */
+
+/* Styling af navigationsbaren */
+nav {
+    position: fixed; /* sikrer at nav følger skærmen, når der scrolles nedad */
+    z-index: 999; /* Høj z-index-værdi for at sikre, at det vises over andre elementer */ 
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+/* 
+
+<input type="checkbox" id="nav-checkbox" class="nav-checkbox"> <!--id skal bruges til checkboksens (til burger) funktion. Class skal style elementerne -->
+        
+    <!-- Burgerbar img/ikon -->
+     <label for="nav-checkbox" class="nav-toggle"> <!--ÆNDRE NAVN-->
+     <i class="fas fa-bars"></i> <!--Burger ikon-->
+     </label>
+                
+     <ul class="nav-styling"> 
+
+*/ 
+
 
 
 
