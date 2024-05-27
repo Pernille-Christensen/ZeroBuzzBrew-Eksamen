@@ -13,32 +13,63 @@
 
 /*------------------------------------------*/
 
-/* Styling for html - fjerner eksisterende basis */
+/* BASIS - fjerner eksisterende basis */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0; /*fjerner alt margin, som basis*/
+    padding: 0; /*fjerner alt padding, som basis*/
+    color: var(--moerk-skrift); /* angiver basis tekst-farve*/
+    font-family: "Montserrat", sans-serif; /* font som basis*/
+    font-size: 15px; /* angiver skriftstørrelsen for basis teksst*/
+    line-height: 1.5; /* angiver linjeafstand for alt tekst*/
+    background-color: var(--baggrundsfarve); /*angiver basis baggrundsfarve*/
 }
-
 
 
 /* GENERELT - ALT HTML */
 
 /* Farvepalette */
 :root {
-    --moerk: #000; 
-    --lys:
-    --grøn:
-    --brun:
-    --baggrundsfarve:
-
+    --hvid: #FFFFFF;
+    --moerk-skrift: #2D1B14;
+    --brun: #947856;
+    --grøn: #9BB93A;
+    --beige: #F4E9CE;
+    --baggrundsfarve: #F6F9F8;
 }
 
+/* Styling af a-tags/links */
 a {
     text-decoration: none; /* fjerner streger under links */
     color: inherit; /* fjerner den blå farve i links */
+}
+
+/* Styling af overskrifter */
+h1 { 
+    font-family: "Quattrocento", serif;
+    font-size: 47px;
+    font-weight: 550; /* tykkelse af font */
+    padding-bottom: 20px; /* angiver afstand til nedenforstående*/
+}
+
+/* Styling af under-overskrifter */
+h2 {
+    font-size: 20px; 
+    font-weight: 700; /* tykkelse af font */
+    padding-bottom: 15px; /* angiver afstand til nedenforstående*/
+    color: var(--brun);
+}
+
+/* Styling af citater */
+h3 {
+    font-size: 16px;
+    font-weight: 200; /* tykkelse af font */
+    font-style: italic; /* angiver kussiv */
+}
+
+p {
+    padding-bottom: 10px; /* angiver afstand til nedenforstående*/
 }
 
 /*------------------------------------------*/
