@@ -1,0 +1,54 @@
+/*
+ * file: css/css.css
+ * purpose: styling: 
+
+ * Krav for opgaven:
+    - "External CSS: Struktur og præsentation skal være adskilt"
+    - "Performance: Produktet skal være optimeret i relation til Page Load Time"
+    - "SEO: Optimer din kode til søgemaskiner"
+    - "Semantisk HTML; semantiske tags"
+    - Billeder skal optimeres og være webp
+    - Alt kode skal valideres
+*/
+
+/*------------------------------------------*/
+
+/* Styling for html - fjerner eksisterende basis */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* GENERELT - ALT HTML */
+
+/* Farvepalette */
+:root {
+    --moerk: #000; 
+    --lys:
+    --grøn:
+    --brun:
+    --baggrundsfarve:
+
+}
+
+a {
+    text-decoration: none; /* fjerner streger under links */
+    color: inherit; /* fjerner den blå farve i links */
+}
+
+/*------------------------------------------*/
+
+/* FUNKTIONER - STYLING AF NAV */
+
+
+
+
+/*------------------------------------------*/
+
+/* FOOTER - STYLING */
+
