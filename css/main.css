@@ -17,7 +17,6 @@
 *,
 *::before,
 *::after {
-    
     margin: 0; /*fjerner alt margin, som basis*/
     padding: 0; /*fjerner alt padding, som basis*/
     color: var(--moerk-skrift); /* angiver basis tekst-farve*/
@@ -134,7 +133,6 @@ p {
     margin: 0; /* fjerner den margin, som er angivet for navigationsbaren */
     padding-top: 15px; /* Afstand til ovenforstående element*/
     padding-bottom: 2px;
-
 }
 
 
@@ -176,7 +174,7 @@ p {
 .nyheder-knap {
     background-color:var(--grøn); /* Farve på knap */
     color: var(--hvid); /* Tekstfarve */
-    bottom: -10px; /* Angiver afstanden fra bunden */
+    bottom: 150px; /* Angiver afstanden fra bunden */
     border-radius: 5px; /* Rundede hjørner */ 
     right: 70px; /* Angiver afstanden fra højre */
     font-size: 30px; /* Skriftstørrelse */
@@ -184,7 +182,6 @@ p {
     padding: 10px 20px; /* Indvendig margen */
     text-decoration: none; /* Fjern understregning */
     position: absolute;
-    
     transition: background-color 0.3s; /* Glidende overgang for baggrundsfarve */
 }
 
