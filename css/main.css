@@ -215,7 +215,8 @@ p {
     background-color: rgba(148, 120, 86, 0); /* Gennemsigtig baggrundsfarve */
 }
 
-/* FORSIDE - MIDT */
+
+/*--- FORSIDE - MIDT ---*/
 
 /* Styling - tekstsektion, øverst i midt-sektion*/
 .forside-midt {
@@ -234,7 +235,7 @@ p {
     padding-bottom: 40px;
     max-width: 800px; /* Bredden på tekststykke */
     text-align: center; /* Centrerer teksten */
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .forside-midt-tekst {
@@ -275,7 +276,7 @@ section.billedgalleri img {
 
 /* Placering - billedgalleri */
 #billedgalleri-forside {
-    margin-top: 70px; /* Afstand til ovenforstående */
+    margin-top: 90px; /* Afstand til ovenforstående */
     margin-bottom: 50px; /* Afstand til nedenforstående */
     display: flex;
     justify-content: center; /* Centrerer billedgalleriet */
@@ -284,9 +285,10 @@ section.billedgalleri img {
 }
 
 
+/*--- FORSIDE - BUND ---*/
 
 
-/* Styling*/
+
 
 
 
