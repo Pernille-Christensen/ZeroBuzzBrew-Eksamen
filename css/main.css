@@ -48,8 +48,8 @@ a {
 /* Styling - overskrifter */
 h1 { 
     font-family: "Quattrocento", serif;
-    font-size: 47px;
-    font-weight: 550; /* tykkelse af font */
+    font-size: 50px;
+    font-weight: 600; /* tykkelse af font */
     padding-bottom: 20px; /* angiver afstand til nedenforstående*/
 }
 
@@ -212,7 +212,7 @@ p {
     font-weight: 400;
     text-align: center; /* Højrestiller teksten */
     position: absolute; /* Absolut positionering */
-
+    background-color: rgba(148, 120, 86, 0); /* Gennemsigtig baggrundsfarve */
 }
 
 /* FORSIDE - MIDT */
@@ -220,6 +220,9 @@ p {
 /* Styling - tekstsektion, øverst i midt-sektion*/
 .forside-midt {
     text-align: center; /* Centrerer teksten */
+    display: flex; 
+    flex-direction: column; /* sætter i lodret række*/
+    align-items: center; /* Centrerer elementer*/
 }
 
 .h1-midt {
@@ -227,21 +230,29 @@ p {
 }
 
 .tekst-midt {
-    padding-top: 30px;/* Afstand til ovneforstående elementer*/
-    max-width: 550px; /* Bredden på tekststykke*/
-    align-items: center;
+    padding-bottom: 40px; /* Afstand til knap */
+    padding-bottom: 40px;
+    max-width: 800px; /* Bredden på tekststykke */
+    text-align: center; /* Centrerer teksten */
+    font-size: 25px;
+}
+
+.forside-midt-tekst {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrerer teksten og knappen */
+    margin-top: 30px; /* Afstand til ovenstående h1 */
 }
 
 /* Styling - knappen "BRYGGERIET.." */
 .bryggeriets-historie-knap {
     background-color:var(--brun); /* Farve på knap */
     color: var(--hvid); /* Tekstfarve */
-    font-size: 30px; /* Skriftstørrelse */
+    font-size: 28px; /* Skriftstørrelse */
     font-weight: 500; /* Skrifttykkelse*/
     border-radius: 15px; /* Rundede hjørner */ 
-    padding: 10px 20px; /* Indvendig margen */
+    padding: 8px 17px; /* Indvendig margen */
     text-decoration: none; /* Fjern understregning */
-    position: absolute; /* Absolut positionering */
     box-shadow: 0 4px 8px var(--moerk-skrift); /* Tilføjer skyggeeffekt */
     transition: transform 0.3s, box-shadow 0.3s; /* Glat overgangseffekt */
 }
@@ -254,8 +265,26 @@ p {
 }
 
 
-
 /* BILLEDGALLERI */
+  
+/* Styling - billedgalleri */
+section.billedgalleri img {
+    max-width: 275px; /* Angiver billedernes størrelse*/height: auto; /* Justerer automatisk højden */
+    border-radius: 5px; /* Afrundede kanter på img */
+  }
+
+/* Placering - billedgalleri */
+#billedgalleri-forside {
+    margin-top: 70px; /* Afstand til ovenforstående */
+    margin-bottom: 50px; /* Afstand til nedenforstående */
+    display: flex;
+    justify-content: center; /* Centrerer billedgalleriet */
+    flex-wrap: wrap; /* Tillader fleksibel layout */
+    gap: 25px; /* Afstand mellem billederne */
+}
+
+
+
 
 /* Styling*/
 
