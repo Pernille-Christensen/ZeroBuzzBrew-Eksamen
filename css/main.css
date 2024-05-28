@@ -80,11 +80,13 @@ p {
 
 /*------------------------------------------*/
 
+
 /* NAVIGATIONSBAR - STYLING OG FUNKTIONALITET */
 
 /* Styling - navigations linjen */
 .nav {
-    z-index: 999; /* Høj z-index-værdi for at sikre, at det vises over andre elementer */ 
+    z-index: 999; /* Høj værdi, sikrer at menuen vises over andre elementer */ 
+    position: relative; /* Angiver korrekt placering af dropdown*/
 }
 
 /* Styling - navigationsbaren - ul */
@@ -115,6 +117,7 @@ p {
     top: 100%; /* Positioner lige under forældreelementet */
     list-style: none;
     padding: 0;
+    z-index: 1000; /*Høj værdi, for at sikre at dropdown overgår andre elementer*/
 }
 
 /* Effekter - Vis dropdown-menuen ved hover */
@@ -163,6 +166,8 @@ p {
 .forside-img {
     width: 100%; /* Sikrer at billedet bredde følger browserens*/
     display: block; 
+    z-index: 0; /* Sikrer at billedet placeres bag dropdown */
+    position: relative; /* Sørger for, at z-index anvendes korrekt */
 }
 
 #forside-top {
