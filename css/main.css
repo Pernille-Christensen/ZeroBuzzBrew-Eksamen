@@ -11,7 +11,7 @@
     - Alt kode skal valideres
 */
 
-/*------------------------------------------*/
+/*--------------- GENERELT ----------------*/
 
 /* BASIS - fjerner eksisterende basis */
 *,
@@ -21,7 +21,7 @@
     padding: 0; /*fjerner alt padding, som basis*/
     color: var(--moerk-skrift); /* angiver basis tekst-farve*/
     font-family: "Montserrat", sans-serif; /* font som basis*/
-    font-size: 15px; /* angiver skriftstørrelsen for basis teksst*/
+    font-size: 17px; /* angiver skriftstørrelsen for basis teksst*/
     line-height: 1.5; /* angiver linjeafstand for alt tekst*/
     background-color: var(--baggrundsfarve); /*angiver basis baggrundsfarve*/
 }
@@ -78,7 +78,8 @@ p {
     max-height: 57px; /* størrelse på logo*/
 }
 
-/*------------------------------------------*/
+
+/*------------ NAVIGATION ------------------*/
 
 
 /* NAVIGATIONSBAR - STYLING OG FUNKTIONALITET */
@@ -158,9 +159,9 @@ p {
 
 
 
-/*------------------------------------------*/
+/*-------------- FORSIDEN -------------------*/
 
-/* FORSIDE */
+/* FORSIDE - TOP */
 
 /* Styling - Baggrundsbillede, på forsiden */
 .forside-img {
@@ -208,18 +209,60 @@ p {
     bottom: 100px; /* Placering fra bunden af img */
     right: 50px; /* Placering fra højre kant*/
     max-width: 320px; /* Bredden på tekststykket */
-    font-size: 17px; /* Skriftstørrelse */
     font-weight: 400;
     text-align: center; /* Højrestiller teksten */
     position: absolute; /* Absolut positionering */
 
 }
 
+/* FORSIDE - MIDT */
+
+/* Styling - tekstsektion, øverst i midt-sektion*/
+.forside-midt {
+    text-align: center; /* Centrerer teksten */
+}
+
+.h1-midt {
+    padding-top: 70px; /* Afstand til ovneforstående elementer*/
+}
+
+.tekst-midt {
+    padding-top: 30px;/* Afstand til ovneforstående elementer*/
+    max-width: 550px; /* Bredden på tekststykke*/
+    align-items: center;
+}
+
+/* Styling - knappen "BRYGGERIET.." */
+.bryggeriets-historie-knap {
+    background-color:var(--brun); /* Farve på knap */
+    color: var(--hvid); /* Tekstfarve */
+    font-size: 30px; /* Skriftstørrelse */
+    font-weight: 500; /* Skrifttykkelse*/
+    border-radius: 15px; /* Rundede hjørner */ 
+    padding: 10px 20px; /* Indvendig margen */
+    text-decoration: none; /* Fjern understregning */
+    position: absolute; /* Absolut positionering */
+    box-shadow: 0 4px 8px var(--moerk-skrift); /* Tilføjer skyggeeffekt */
+    transition: transform 0.3s, box-shadow 0.3s; /* Glat overgangseffekt */
+}
+
+/* Effekter - Hover "BRYGGERIET.." knap */
+.bryggeriets-historie-knap:hover {
+    transform: scale(1.3); /* Forstørrer ved hover */
+    font-weight: bold; /* Tykkelse på font ved hover */
+    box-shadow: 0 8px 16px var(--moerk-skrift); /* Forstærker skyggeeffekten ved hover */
+}
+
+
+
+/* BILLEDGALLERI */
+
+/* Styling*/
 
 
 
 
-/*------------------------------------------*/
+/*-------------- FOOTER --------------------*/
 
 /* FOOTER - STYLING */
 
