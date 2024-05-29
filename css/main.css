@@ -139,35 +139,29 @@ p {
 
 /*---------- NAVIGATION - BURGERMENU --------------*/
 
-/* styling af den egentlige checkboks */
+/* Funktion - Fjerner checkboks*/
 .nav-checkbox {
     display: none; /* Usynliggøre checkboksen*/
 }
 
-/* placering af burgermenu - bar-img */
+/* Placering - Burger-ikon */
 .nav-burger {
     position: absolute; /*Sikrer placering */
     cursor: pointer; /*Ændrer musen, når der holdes på ikonet*/
-    margin: 0rem 1rem; /*Placering af ikon*/
+    margin: 20px 30px; /*Placering af ikon*/
     right: 0; /* Højrestiller ikonet */
     z-index: 1000; /* Placerer ikonet over alt andet */
 }
 
-/* styling af navigation */
-.nav-styling {
-    display: flex;
-    flex-direction: column; /* Elementer på række - mobil view */
-    right: 0;
-    margin: 0.7rem; 
-    margin-bottom: 0; /* fjerner margin i bund */
+/* Effekter - Burger-ikon */
+.nav-burger:hover {
+    transform: scale(1.1); /* Forstørrer ved hover */
 }
 
-/* funktionalitet af burgermenu - bar-img */
+/* Funktion - Burger-ikon */
 #nav-checkbox:checked ~ ul.nav-styling li {
-    display: block; /*kalder på liste elementerne, når der trykkes på bar-img */
+    display: block; /*Ved klik på ikon, kaldes der på menuen */
 }
-
-
 
 
 /*-------------- FORSIDEN -------------------*/
@@ -384,6 +378,7 @@ section.billedgalleri img {
     fill: #947856; /*Farve på ikonet*/
 }
 
+/* Placering - Ikoner*/
 .footer-ikoner {
     display: flex;
     position: absolute;
@@ -391,6 +386,10 @@ section.billedgalleri img {
     gap: 10px; /* Mellemrum mellem ikoner */
 }
 
+/* Effekter - Ikoner */
+.footer-ikoner:hover {
+    transform: scale(1.3); /* Forstørrer ved hover */
+}
 
 
 /*------------- RESPONSIVT ---------------*/
@@ -411,6 +410,7 @@ section.billedgalleri img {
     .nav-styling li {
         display: block; /* Viser alle li-elementer */
     }
+
 }
 
 /* Mobile view - max-width er sat til der hvor "tablets and smaller screens"-starter */
@@ -431,6 +431,4 @@ section.billedgalleri img {
     .nav-burger {
         display: block; /* Viser ikonet */
     }
-
-
 }
