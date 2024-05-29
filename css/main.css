@@ -91,7 +91,6 @@ p {
 
 /* Styling - navigationsbaren - ul */
 .nav-styling {
-    display: flex;
     justify-content: center; /* Centerer ul-elementer */
     align-items: center; /* Vertikalt centerering */
     list-style: none;
@@ -115,8 +114,8 @@ p {
     display: none; /* Skjuler */
     position: absolute;
     top: 100%; /* Positioner lige under forældreelementet */
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Fjerner prikker fra liste*/
+    padding: 0; /* Ingen padding*/
     z-index: 1000; /*Høj værdi, for at sikre at dropdown overgår andre elementer*/
 }
 
@@ -125,7 +124,6 @@ p {
     display: block; /* Viser elementer*/
     font-weight: 200; /* Tykkelse på font ved hover */
 }
-
 
 /* Styling - dropdown li */
 .dropdown li {
@@ -136,27 +134,38 @@ p {
     margin: 0; /* fjerner den margin, som er angivet for navigationsbaren */
     padding-top: 15px; /* Afstand til ovenforstående element*/
     padding-bottom: 2px;
-
 }
 
 
 /*---------- NAVIGATION - BURGERMENU --------------*/
 
+/* styling af den egentlige checkboks */
+.nav-checkbox {
+    display: none; /* Usynliggøre checkboksen*/
+}
 
+/* placering af burgermenu - bar-img */
+.nav-burger {
+    position: absolute; /*Sikrer placering */
+    cursor: pointer; /*Ændrer musen, når der holdes på ikonet*/
+    margin: 0rem 1rem; /*Placering af ikon*/
+    right: 0; /* Højrestiller ikonet */
+    z-index: 1000; /* Placerer ikonet over alt andet */
+}
 
-/* 
+/* styling af navigation */
+.nav-styling {
+    display: flex;
+    flex-direction: column; /* Elementer på række - mobil view */
+    right: 0;
+    margin: 0.7rem; 
+    margin-bottom: 0; /* fjerner margin i bund */
+}
 
-<input type="checkbox" id="nav-checkbox" class="nav-checkbox"> <!--id skal bruges til checkboksens (til burger) funktion. Class skal style elementerne -->
-        
-    <!-- Burgerbar img/ikon -->
-     <label for="nav-checkbox" class="nav-toggle"> <!--ÆNDRE NAVN-->
-     <i class="fas fa-bars"></i> <!--Burger ikon-->
-     </label>
-                
-     <ul class="nav-styling"> 
-
-*/ 
-
+/* funktionalitet af burgermenu - bar-img */
+#nav-checkbox:checked ~ ul.nav-styling li {
+    display: block; /*kalder på liste elementerne, når der trykkes på bar-img */
+}
 
 
 
@@ -217,7 +226,7 @@ p {
 }
 
 
-/*--- FORSIDE - MIDT ---*/
+/*---- FORSIDE - MIDT ----*/
 
 /* Styling - tekstsektion, øverst i midt-sektion*/
 .forside-midt {
@@ -287,7 +296,7 @@ section.billedgalleri img {
     gap: 25px; /* Afstand mellem billederne */
 }
 
-/*--- FORSIDE - BUND ---*/
+/*---- FORSIDE - BUND ----*/
 
 /* Placering */
 .forside-bund {
@@ -341,6 +350,7 @@ section.billedgalleri img {
     background-color:rgba(148, 120, 86, 0); /* Gennemsigtig baggrundsfarve */
 }
 
+
 /*-------------- FOOTER --------------------*/
 
 /* Placering - generelt for footer */
@@ -379,4 +389,48 @@ section.billedgalleri img {
     position: absolute;
     right: 80px; /* Afstand fra kant, til ikoner*/
     gap: 10px; /* Mellemrum mellem ikoner */
+}
+
+
+
+/*------------- RESPONSIVT ---------------*/
+
+/* desktop view - min-width er sat til der hvor "desktops and large screens"-starter */
+@media only screen and (min-width: 1025px) {
+
+    /* STYLING AF NAVIGATION */
+    .nav-burger {
+        display: none; /* skjuler ikon i desktop view */
+    }
+ 
+    .nav-styling {
+        flex-direction: row; /* ændrer opstilling/retning på listede elementer i nav */
+        display: flex;
+    }
+ 
+    .nav-styling li {
+        display: block; /* Viser alle li-elementer */
+    }
+}
+
+/* Mobile view - max-width er sat til der hvor "tablets and smaller screens"-starter */
+@media only screen and (max-width: 1024px) {
+    .nav-styling {
+        display: none; /* Skjul nav som standard */
+        flex-direction: column; /* Elementer på række - mobil view */
+    }
+
+    #nav-checkbox:checked ~ .nav-styling {
+        display: flex; /* Vis nav når checkboxen er checket */
+    }
+
+    .nav-styling li {
+        display: block; /* Vis alle li-elementer ved klik på ikon */
+    }
+
+    .nav-burger {
+        display: block; /* Viser ikonet */
+    }
+
+
 }

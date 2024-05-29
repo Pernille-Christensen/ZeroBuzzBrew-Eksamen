@@ -29,10 +29,18 @@
         <header>
             <nav class="nav"> <!-- NAVIGATION -->
                  
-             <!-- INDSÆT NAV - CHECKBOKS HER-->
-                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12" width="30px"> 
-                <path class="burger" d="M0,12v-2h18v2H0ZM0,7v-2h18v2H0ZM0,2V0h18v2H0Z"/></svg> 
-
+                <!-- NAVIGATION - BURGERMENU -->
+                <input type="checkbox" id="nav-checkbox" class="nav-checkbox"> <!--id skal bruges til checkboksens (til burger) funktion. Class skal style elementerne -->
+        
+                <!-- Burger-menu ikon -->
+                <label for="nav-checkbox" class="nav-burger"> <!--ÆNDRE NAVN-->
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                        <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+                        </svg>
+                </label>
+                            
+        
+                <!-- NAVIGATION -->
                 <ul class="nav-styling">
                  <li><a href="bryggeriet.html">BRYGGERIET</a></li> 
 
