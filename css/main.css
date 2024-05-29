@@ -362,11 +362,14 @@ section.billedgalleri img {
 .b-forside-tekst {
     text-align: center; /* Centrerer teksten */
     position: absolute ;
-    top: 60%; /* Placerer teksten 60% fra toppen */
+    top: 58%; /* Placerer teksten 60% fra toppen */
     left: 50%; /* Centrerer teksten - også responsivt */
     transform: translate(-50%, -50%); /* Centrerer teksten nøjagtigt midt på billedet - også responsivt*/
     background-color:rgba(148, 120, 86, 0); /* Gennemsigtig baggrundsfarve */
-    color: var(--baggrundsfarve);
+    color: var(--baggrundsfarve); /*Skriftfarve*/
+    max-width: 750px; /* Bredden på teskt "feltet"*/
+    font-size: 60px; /*Skriftstørrelse*/
+    font-weight: 800; /*Font-tykkelse*/
 }
 
 
