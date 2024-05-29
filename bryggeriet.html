@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="da"> <!-- Angiver at sproget er dansk -->
+     <head>
+        <meta charset="UTF-8"> <!-- Angiver universal tegnkodning - forhindrer fejl i visning. Standard praksis -->
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Angiver visning for websitet og hvordan/at den skaleres korrekt på forskellige enheder-->
+        
+        <title>ZeroBuzz Brew</title> <!-- Titel i faneblad -->
+        
+        <!-- SEO - META TAG -->
+        <meta name="description" content="ZeroBuzz Brew er et mikrobryggeri der ikke blot tilbyder et udvalg af lækre alkoholfri øl, men også fremmer en kultur, hvor sammenhold vægtes højere end alkohol."> <!-- SEO beskrivelse, vises i søgeresultatet-->
+        
+        <!-- LINKS -->
+        <link rel="stylesheet" href="css/main.css"> <!-- Linker til CSS-->
+
+        <!-- GOOGLE FONTS -->
+        <style> 
+            @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap'); 
+
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+
+    </head>
+
+    <!-- Når noter er angivet med store bogstaver, er det en overskrift. Overskriften henviser, til tilhørende samme overskrift, i CSS -->
+
+
+    <body>
+        <header><!-- NAVIGATION -->
+            <nav class="nav"> 
+                 
+                <!-- NAVIGATION - BURGERMENU -->
+                <input type="checkbox" id="nav-checkbox" class="nav-checkbox"> <!--id skal bruges til checkboksens (til burger) funktion. Class skal style elementerne -->
+        
+                <!-- Burger-menu ikon -->
+                <label for="nav-checkbox" class="nav-burger"> <!--ÆNDRE NAVN-->
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                        <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+                        </svg>
+                </label>
+                          
+                <!--Logo, vises først når burgermenuen er aktivteret-->
+                <figure class="logo-top-venstre"> 
+                    <img class="logo" src="images/0-logo.webp" alt="ZeroBuzz" >
+                </figure>
+        
+                <!-- NAVIGATION -->
+                <ul class="nav-styling">
+                 <li><a href="bryggeriet.html">BRYGGERIET</a></li> 
+
+                 <li><a href="events.html">EVENTS</a>
+                    <ul class="dropdown"> <!-- dropdown liste -->
+                        <li><a href="events.events.html">EVENTS</a></li>
+                        <li><a href="faellesskab.events.html">FÆLLESSKAB</a></li>
+                    </ul>
+                </li> 
+
+                 <!--Logo i midten af navigationsbarens elementer-->
+                 <li><a href="index.html"> <!--Linker logo til forsiden-->
+                    <img class="logo" src="images/0-logo.webp" alt="ZeroBuzz" >
+                 </a></li>
+
+                 <li><a href="produkter.html">PRODUKTER</a></li> 
+
+                 <li><a href="kontakt.html">KONTAKT</a></li> 
+                   
+                </ul>
+            </nav> 
+        </header>   
+
+        <main>
+            <article> <!-- FORSIDE - TOP -->
+                    <img class="bryggeriet-forside" src="images/3-bryggeriet-landingpage.webp" alt="Bryggeriet ZeroBuzz"> 
+    
+                    <h1 class="b-forside-tekst" >ET BRYGGERIEVENTYR UDEN ENDE</h1>
+
+            </article>
+
+        </main>
+
+
+
+
+
+    </body>
+
+
+    <footer class="footer"><!--FOOTER-->
+        
+        <figure>
+            <a href="index.html"> <!-- Logo linker logo til forsiden-->
+            <img class="logo" src="images/0-logo.webp" alt="ZeroBuzz" ></a>
+        </figure>  
+
+        <figure class="footer-info"> <!-- Info om virksomheden-->
+            <p>ZeroBuzz Brew</p>
+            <p>Brygmarksvej 154</p>
+            <p>8200 Århus N</p>
+            <p>+45 98 76 54 32</p>
+            <p><a href="mailto:info@ZeroBuzz.dk">info@ZeroBuzz.dk</a></p>
+            <p>Cvr nr. 12345678-90</p>
+        </figure>      
+        
+
+        <!-- Ikoner til sociale medier, i footer-->
+        <figure class="footer-ikoner"> 
+            
+            <!-- Instagram ikon - taget fra icons8.com -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="38" viewBox="0 0 50 50"> <!--størrelse på ikon er defineret her -->
+                <path class="sociale-medier" d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+            </svg>
+            
+                <!-- Facebook ikon - taget fra icons8.com -->
+             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 30 30"><!--størrelse på ikon er defineret her-->
+                <path class="sociale-medier" d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z"></path>
+            </svg>
+        
+        </figure>
+
+    </footer>
+
+</html>
+
+   
+
+
+
+
+

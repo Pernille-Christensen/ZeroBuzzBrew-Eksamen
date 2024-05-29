@@ -83,6 +83,11 @@ p {
 
 /* NAVIGATIONSBAR - STYLING OG FUNKTIONALITET */
 
+/* Placering - logo, aktiveres v. burgermenu*/
+.logo-top-venstre {
+    display: none; /* Skjuler logo*/
+}
+
 /* Styling - navigations linjen */
 .nav {
     z-index: 999; /* Høj værdi, sikrer at menuen vises over andre elementer */ 
@@ -192,7 +197,7 @@ p {
     bottom: 230px; /* Angiver afstanden fra bunden */
     border-radius: 15px; /* Rundede hjørner */ 
     right: 90px; /* Angiver afstanden fra højre */
-    font-size: 38px; /* Skriftstørrelse */
+    font-size: 35px; /* Skriftstørrelse */
     font-weight: 700; /* Skrifttykkelse*/
     padding: 10px 20px; /* Indvendig margen */
     position: absolute; /* Absolut positionering */
@@ -302,7 +307,8 @@ section.billedgalleri img {
     position: absolute;
     bottom: 100px; /* Afstand fra bunden af billedet */
     left: 50px; /* Afstand fra venstre */
-    text-align: left; /* Venstrejusterer teksten */background-color: rgba(148, 120, 86, 0); /* Gennemsigtig baggrundsfarve */
+    text-align: left; /* Venstrejusterer teksten */
+    background-color: rgba(148, 120, 86, 0); /* Gennemsigtig baggrundsfarve */
     margin-bottom: 10px; /* Afstand mellem tekst og knap */
     max-width: 370px; /* Bredden på tekststykket*/
 }
@@ -343,6 +349,27 @@ section.billedgalleri img {
 .tekst-over-knap {
     background-color:rgba(148, 120, 86, 0); /* Gennemsigtig baggrundsfarve */
 }
+
+/*----------- BRYGGERIET - HTML -------------*/
+
+.bryggeriet-forside {
+    width: 100%; /* Sikrer at billedet bredde følger browserens*/
+    display: block; 
+    z-index: 0; /* Sikrer at billedet placeres bag dropdown */
+    position: relative; /* Sørger for, at z-index anvendes korrekt */
+}
+
+.b-forside-tekst {
+    text-align: center; /* Centrerer teksten */
+    position: absolute ;
+    top: 60%; /* Placerer teksten 60% fra toppen */
+    left: 50%; /* Centrerer teksten - også responsivt */
+    transform: translate(-50%, -50%); /* Centrerer teksten nøjagtigt midt på billedet - også responsivt*/
+    background-color:rgba(148, 120, 86, 0); /* Gennemsigtig baggrundsfarve */
+    color: var(--baggrundsfarve);
+}
+
+
 
 
 /*-------------- FOOTER --------------------*/
@@ -416,7 +443,8 @@ section.billedgalleri img {
 /* Mobile view - max-width er sat til der hvor "tablets and smaller screens"-starter */
 @media only screen and (max-width: 1024px) {
 
-    /* STYLING AF NAVIGATION */
+    /* ------- STYLING AF NAVIGATION ------ */
+
     .nav-styling {
         display: none; /* Skjul nav som standard */
         flex-direction: column; /* Elementer på række - mobil view */
@@ -446,7 +474,6 @@ section.billedgalleri img {
         margin-top: 0; /* -//- og 'produkter' */
     }
 
-  
     #nav-checkbox:checked ~ .nav-styling li ul.dropdown {
         position: relative; /* Placeringen af dropdown-menuen */
         left: 0; /* Venstrestiller */
@@ -455,9 +482,47 @@ section.billedgalleri img {
         margin-top: 5px; /* Afstand mellem "EVENTS" og dropdown-menuen */
     }
 
-     .forside-img {
+    .logo-top-venstre {
+        display: block; /*Viser logo i venstre hjørne, når burgermenu er aktiveret*/
+        padding: 20px; /*Luft omkring logo*/
+    }
+
+
+    /* --------- STYLING AF FORSIDE ---------*/
+
+    .forside-img {
         margin-top: 40px; /* Juster margenen øverst på siden, når nav bliver til ikon */
     }
 
+
+    /*Ændring i størrelser på knap*/
+    .nyheder-knap {
+        bottom: 120px; /* Angiver afstanden fra bunden */
+        border-radius: 15px; /* Rundede hjørner */ 
+        right: 90px; /* Angiver afstanden fra højre */
+        font-size: 25px; /* Skriftstørrelse */
+        font-weight: 500; /* Skrifttykkelse*/
+    }
+
+    /*Ændring i størrelser på tekst under knap*/
+    #tekst-under-knap {
+        bottom: 10px; /* Placering fra bunden af img */
+        right: 40px; /* Placering fra højre kant*/
+        max-width: 320px; /* Bredden på tekststykket */
+        font-weight: 400;
+    }
+    /*Ændring i breddem på tekststykke, nederst på siden*/
+    .tekst-over-knap {
+        width: 230px;
+        font-size: 35px;
+    }
+    /* Ændring i afstand til bund, nederst på siden */
+    .tekst-bund-forside {
+        bottom: 10px;
+    }
+    /* Ændring i størrelse på knapper */
+    .lobeklub-knap, .bryggeriets-historie-knap {
+        font-size: 20px;
+    }
 }
 
