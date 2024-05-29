@@ -378,7 +378,7 @@ section.billedgalleri img {
     fill: #947856; /*Farve på ikonet*/
 }
 
-/* Placering - Ikoner*/
+/* Placering - Ikoner */
 .footer-ikoner {
     display: flex;
     position: absolute;
@@ -415,6 +415,8 @@ section.billedgalleri img {
 
 /* Mobile view - max-width er sat til der hvor "tablets and smaller screens"-starter */
 @media only screen and (max-width: 1024px) {
+
+    /* STYLING AF NAVIGATION */
     .nav-styling {
         display: none; /* Skjul nav som standard */
         flex-direction: column; /* Elementer på række - mobil view */
@@ -431,4 +433,31 @@ section.billedgalleri img {
     .nav-burger {
         display: block; /* Viser ikonet */
     }
+
+    #nav-checkbox:checked ~ .nav-styling li .logo {
+        display: none; /* Skjuler logoet, i nav, når burgermenuen er aktiveret */
+    }
+
+    #nav-checkbox:checked ~ .nav-styling li:nth-child(2) {
+        margin-bottom: 0; /* Sikrer retmæssig placering af li-element 'fællesskab' når logoet er skjult */
+    }
+
+    #nav-checkbox:checked ~ .nav-styling li:nth-child(3) {
+        margin-top: 0; /* -//- og 'produkter' */
+    }
+
+  
+    #nav-checkbox:checked ~ .nav-styling li ul.dropdown {
+        position: relative; /* Placeringen af dropdown-menuen */
+        left: 0; /* Venstrestiller */
+        top: auto; /* Justerer automatisk */
+        width: 100%; /* Øger afstanden, så der er plads til dropdown-elementer */
+        margin-top: 5px; /* Afstand mellem "EVENTS" og dropdown-menuen */
+    }
+
+     .forside-img {
+        margin-top: 40px; /* Juster margenen øverst på siden, når nav bliver til ikon */
+    }
+
 }
+
