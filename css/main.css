@@ -136,8 +136,11 @@ p {
     margin: 0; /* fjerner den margin, som er angivet for navigationsbaren */
     padding-top: 15px; /* Afstand til ovenforstående element*/
     padding-bottom: 2px;
+
 }
 
+
+/*---------- NAVIGATION - BURGERMENU --------------*/
 
 
 
@@ -333,6 +336,10 @@ section.billedgalleri img {
     margin-bottom: 20px; /* Afstand til nedenforstående */
 }
 
+/*Styling - tekststykke */
+.tekst-over-knap {
+    background-color:rgba(148, 120, 86, 0); /* Gennemsigtig baggrundsfarve */
+}
 
 /*-------------- FOOTER --------------------*/
 
@@ -351,16 +358,25 @@ section.billedgalleri img {
   margin-bottom: 10px; /* Afstand til bund*/
 }
 
-/* Styling - tekst i footer */
-.footer-info p {
-    font-size: 12px; /* Skriftstørrelse i footer*/
+    /* Styling - tekst i footer */
+    .footer-info p {
+        font-size: 12px; /* Skriftstørrelse i footer*/
+    }
+
+    /* Styling - tekst/links i footer */
+    .footer-info a {
+        font-size: 12px; /* Skriftstørrelse i footer - også link */
+    }
+
+
+/* Styling - Instagram & Facebook ikon */
+.sociale-medier {
+    fill: #947856; /*Farve på ikonet*/
 }
 
-/* Styling - tekst/links i footer */
-.footer-info a {
-    font-size: 12px; /* Skriftstørrelse i footer - også link */
+.footer-ikoner {
+    display: flex;
+    position: absolute;
+    right: 80px; /* Afstand fra kant, til ikoner*/
+    gap: 10px; /* Mellemrum mellem ikoner */
 }
-
-/*MANGLER STYLING AF IKONER*/
-
-/*MANGLLER AT FINED IKONER*/
