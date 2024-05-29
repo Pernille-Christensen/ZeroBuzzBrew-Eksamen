@@ -48,14 +48,14 @@ a {
 /* Styling - overskrifter */
 h1 { 
     font-family: "Quattrocento", serif;
-    font-size: 50px;
+    font-size: 44px;
     font-weight: 600; /* tykkelse af font */
-    padding-bottom: 20px; /* angiver afstand til nedenforstående*/
+    padding-bottom: 25px; /* angiver afstand til nedenforstående*/
 }
 
 /* Styling - under-overskrifter */
 h2 {
-    font-size: 20px; 
+    font-size: 24px; 
     font-weight: 700; /* tykkelse af font */
     padding-bottom: 15px; /* angiver afstand til nedenforstående*/
 }
@@ -238,6 +238,7 @@ p {
 /* Styling - h1 */
 .h1-midt {
     padding-top: 70px; /* Afstand til ovneforstående elementer*/
+    font-size: 50px;
 }
 
 /* Styling - p */
@@ -246,7 +247,7 @@ p {
     padding-bottom: 40px;
     max-width: 800px; /* Bredden på tekststykke */
     text-align: center; /* Centrerer teksten */
-    font-size: 22px;
+    font-size: 20px;
 }
 
 /* Placering - h1 og p */
@@ -352,6 +353,7 @@ section.billedgalleri img {
 
 /*----------- BRYGGERIET - HTML -------------*/
 
+/* Placering - forside billede */
 .bryggeriet-forside {
     width: 100%; /* Sikrer at billedet bredde følger browserens*/
     display: block; 
@@ -359,20 +361,38 @@ section.billedgalleri img {
     position: relative; /* Sørger for, at z-index anvendes korrekt */
 }
 
+/* Styling - forside tekststykke*/
 .b-forside-tekst {
     text-align: center; /* Centrerer teksten */
     position: absolute ;
-    top: 58%; /* Placerer teksten 60% fra toppen */
+    top: 53.5%; /* Placering af teksten fra toppen - så det flugter med glasset*/
     left: 50%; /* Centrerer teksten - også responsivt */
     transform: translate(-50%, -50%); /* Centrerer teksten nøjagtigt midt på billedet - også responsivt*/
     background-color:rgba(148, 120, 86, 0); /* Gennemsigtig baggrundsfarve */
     color: var(--baggrundsfarve); /*Skriftfarve*/
-    max-width: 750px; /* Bredden på teskt "feltet"*/
+    max-width: 850px; /* Bredden på teskt "feltet"*/
     font-size: 60px; /*Skriftstørrelse*/
     font-weight: 800; /*Font-tykkelse*/
 }
 
+/* Placering - alle elementer i denne sektion */
+.midt-tekst-bryggeriet {
+    display: flex;
+}
 
+.billed-artikel-bryggeri {
+    flex: 1; /* Placerer billederne ved siden af tekst*/
+    padding: 70px 30px 50px 30px; /* Luft omkring billederne*/
+}
+
+.artikel-bryggeri {
+    padding: 50px; /*Luft omkring tekst*/
+}
+
+.artikel-bryggeri p {
+    line-height: 1.8; /*Linjeafstand*/
+    padding-bottom: 20px; /* Afstand mellem afsnit*/
+}
 
 
 /*-------------- FOOTER --------------------*/
@@ -527,5 +547,17 @@ section.billedgalleri img {
     .lobeklub-knap, .bryggeriets-historie-knap {
         font-size: 20px;
     }
+
+
+    /*---- BRYGGERIET - HTML ----*/
+
+    /*Ændring i skriftstørrelse*/
+    .b-forside-tekst {
+        max-width: 600px; /* Bredden på teskt "feltet"*/
+        font-size: 40px; /*Skriftstørrelse*/
+        font-weight: 600; /*Font-tykkelse*/
+        top: 40%; /* Placering af teksten fra toppen - så det flugter med glasset*/
+    }
+
 }
 
