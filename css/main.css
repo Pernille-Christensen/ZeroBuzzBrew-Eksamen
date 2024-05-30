@@ -294,6 +294,10 @@ section.billedgalleri img {
     border-radius: 5px; /* Afrundede kanter på img */
   }
 
+.billedgalleri:hover {
+    transform: scale(1.5); /*Gør billedet større, når markøren holdes over*/
+}
+
 /* Placering - billedgalleri */
 #billedgalleri-forside {
     margin-top: 90px; /* Afstand til ovenforstående */
@@ -472,6 +476,10 @@ section.billedgalleri-p img {
     border: solid 0.8px var(--brun);
   }
 
+.billedgalleri-p img:hover {
+    transform: scale(1.2); /*Gør billedet større, når markøren holdes over*/
+}
+
 section.billedgalleri-p p {
     padding-bottom: 2px; /* angiver afstand til nedenforstående*/
     font-weight: 600; /*Fed skrifttype*/
@@ -515,6 +523,40 @@ section.billedgalleri-p p {
 }
 
 
+/*------------ EVENTS - HTML --------------*/
+
+/* Styling - billedgalleri */
+section.billedgalleri-e img {
+    max-width: 400px; /* Angiver billedernes størrelse*/
+    height: auto; /* Justerer automatisk højden */
+    border-radius: 5px; /* Afrundede kanter på img */
+    border: solid 0.8px var(--brun);
+  }
+
+.billedgalleri-e img:hover {
+    transform: scale(1.1); /*Gør billedet større, når markøren holdes over*/
+}
+
+section.billedgalleri-e h2 {
+    padding-bottom: 2px; /* angiver afstand til nedenforstående*/
+}
+
+/*--- EVENTS - ØLSAMGNING ----*/
+
+/* Placering - billedgalleri */
+#events-side {
+    margin-top: 0px; /* Afstand til ovenforstående */
+    margin-bottom: 60px; /* Afstand til nedenforstående */
+    display: flex; /*Sørger for placering*/
+    justify-content: center; /* Centrerer billedet*/
+}
+
+/* Styling - billedgalleri */
+section.event-billede img {
+    max-width: 1000px; /* Angiver billedernes størrelse*/
+    height: auto; /* Justerer automatisk højden */
+    border-radius: 5px; /* Afrundede kanter på img */
+  }
 
 
 /*-------------- FOOTER --------------------*/
