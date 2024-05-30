@@ -49,15 +49,16 @@ a {
 h1 { 
     font-family: "Quattrocento", serif;
     font-size: 44px;
-    font-weight: 600; /* tykkelse af font */
-    padding-bottom: 25px; /* angiver afstand til nedenforstående*/
+    font-weight: 800; /* tykkelse af font */
+    padding-bottom: 15px; /* angiver afstand til nedenforstående*/
 }
 
 /* Styling - under-overskrifter */
 h2 {
-    font-size: 24px; 
+    font-size: 22px; 
     font-weight: 700; /* tykkelse af font */
-    padding-bottom: 15px; /* angiver afstand til nedenforstående*/
+    padding-bottom: 25px; /* angiver afstand til nedenforstående*/
+    color: #947856;
 }
 
 /* Styling - citater */
@@ -194,9 +195,9 @@ p {
 .nyheder-knap {
     background-color:var(--grøn); /* Farve på knap */
     color: var(--hvid); /* Tekstfarve */
-    bottom: 230px; /* Angiver afstanden fra bunden */
+    bottom: 210px; /* Angiver afstanden fra bunden */
     border-radius: 15px; /* Rundede hjørner */ 
-    right: 90px; /* Angiver afstanden fra højre */
+    right: 100px; /* Angiver afstanden fra højre */
     font-size: 35px; /* Skriftstørrelse */
     font-weight: 700; /* Skrifttykkelse*/
     padding: 10px 20px; /* Indvendig margen */
@@ -215,13 +216,14 @@ p {
 /* Styling - tekst under "NYHEDER"*/
 #tekst-under-knap {
     display: block; /* Fastsætter placeringen */
-    bottom: 100px; /* Placering fra bunden af img */
+    bottom: 90px; /* Placering fra bunden af img */
     right: 50px; /* Placering fra højre kant*/
-    max-width: 320px; /* Bredden på tekststykket */
+    max-width: 350px; /* Bredden på tekststykket */
     font-weight: 400;
     text-align: center; /* Højrestiller teksten */
     position: absolute; /* Absolut positionering */
     background-color: rgba(148, 120, 86, 0); /* Gennemsigtig baggrundsfarve */
+    font-size: 18px;
 }
 
 
@@ -236,26 +238,25 @@ p {
 }
 
 /* Styling - h1 */
-.h1-midt {
+.forside-midt h1 {
     padding-top: 70px; /* Afstand til ovneforstående elementer*/
     font-size: 50px;
 }
 
-/* Styling - p */
+/* Styling - p og h2 */
 .tekst-midt {
     padding-bottom: 40px; /* Afstand til knap */
-    padding-bottom: 40px;
-    max-width: 800px; /* Bredden på tekststykke */
+    max-width: 500px; /* Bredden på tekststykke */
     text-align: center; /* Centrerer teksten */
-    font-size: 20px;
+    line-height: 1.8; /*Linjeafstand*/
 }
 
-/* Placering - h1 og p */
+/* Placering - h1, h2 og p */
 .forside-midt-tekst {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centrerer teksten og knappen */
-    margin-top: 30px; /* Afstand til ovenstående h1 */
+    margin-top: 10px; /* Afstand til ovenstående h1 */
 }
 
 /* Styling - knappen "BRYGGERIET.." */
@@ -282,7 +283,8 @@ p {
   
 /* Styling - billedgalleri */
 section.billedgalleri img {
-    max-width: 275px; /* Angiver billedernes størrelse*/height: auto; /* Justerer automatisk højden */
+    max-width: 250px; /* Angiver billedernes størrelse*/
+    height: auto; /* Justerer automatisk højden */
     border-radius: 5px; /* Afrundede kanter på img */
   }
 
@@ -374,6 +376,16 @@ section.billedgalleri img {
     font-size: 60px; /*Skriftstørrelse*/
     font-weight: 800; /*Font-tykkelse*/
 }
+
+.pil-ned-bryggeri {
+    bottom: 30px; /*Afstand fra bund*/
+    position: absolute; /* Absolut, for at fastholde centreret placering*/
+    background-color:rgba(148, 120, 86, 0); /* Gennemsigtig baggrundsfarve */
+    display: flex; /* Sørger for at centreret placering er muligt*/
+    justify-content: center; /*Centrerer pilen*/
+    width: 100%; /*centrerer ud fra hele bredden af siden*/
+}
+
 
 /* Placering - alle elementer i denne sektion */
 .midt-tekst-bryggeriet {
