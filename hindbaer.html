@@ -26,8 +26,8 @@
 
 
     <body>
-        <header>
-            <nav class="nav"> <!-- NAVIGATION -->
+        <header><!-- NAVIGATION -->
+            <nav class="nav"> 
                  
                 <!-- NAVIGATION - BURGERMENU -->
                 <input type="checkbox" id="nav-checkbox" class="nav-checkbox"> <!--id skal bruges til checkboksens (til burger) funktion. Class skal style elementerne -->
@@ -68,91 +68,44 @@
             </nav> 
         </header>   
 
-        <article> <!-- SORTIMENT - NYHEDER-->
-            <figure class="produkt-overskrift">
-                <h1>NYHEDER</h1>
-            </figure>
+        <!--Gå tilbage-->
+        <a class="tilbage-svg" href="produkter.html">
+        <svg  xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#2D1B14"><path d="M280-200v-80h284q63 0 109.5-40T720-420q0-60-46.5-100T564-560H312l104 104-56 56-200-200 200-200 56 56-104 104h252q97 0 166.5 63T800-420q0 94-69.5 157T564-200H280Z"/></svg></a>
+        
 
-            <figure id="billedgalleri-produkter"> <!--Billedgalleri, m. links-->
+        <main> <!-- Produktinfo-->
+            
+            <article class="midt-tekst-bryggeriet">
 
-                <section class="billedgalleri-p"> <!-- Dåse 1-->
-                    <a href="lime.html"> <img src="images/2-lime.webp" alt="ZeroBuzz Brew dåse"></a><!--Linker til produktside-->
-                    <p>IPA - LIME</p>
-                    <h4>0,0% ALKOHOL</h4>
-                </section>
+                <aside class="billed-artikel-bryggeri" >
+                    <img src="images/2-hind.webp" width="500px" alt="om bryggeriet"> 
+                </aside>
 
-                <section class="billedgalleri-p"> <!-- Dåse 2-->
-                    <a href="blabaer.html"> <img src="images/2-bla.webp" alt="ZeroBuzz Brew dåse"></a><!--Linker til produktside-->
-                    <p>IPA - BLÅBÆR</p>
-                    <h4>0,0% ALKOHOL</h4>
-                </section>
+                <aside class="artikel-bryggeri" >
+                    
+                    <h1>IPA - HINDBÆR 0,0%</h1>
+    
+                    <p>Oplev vores håndbryggede øl, skabt med omhu og passion for naturlige ingredienser. </p>
 
-                <section class="billedgalleri-p"> <!-- Dåse 3-->
-                    <a href="hyldeblomst.html"> <img src="images/2-hyld.webp" alt="ZeroBuzz Brew dåse"></a><!--Linker til produktside-->
-                    <p>IPA - HYLLDEBLOMST</p>
-                    <h4>0,0% ALKOHOL</h4>
-                </section>
+                    <p>Hver øl er nøje testet for at sikre den bedste smagsoplevelse, og de unikke nuancer af hver bryg visualiseres i dåsernes farver.</p>
 
-                <section class="billedgalleri-p"> <!-- Dåse 4-->
-                    <a href="havtorn.html"> <img src="images/2-hav.webp" alt="ZeroBuzz Brew dåse"></a><!--Linker til produktside-->
-                    <p>IPA - HAVTORN</p>
-                    <h4>0,0% ALKOHOL</h4>
-                </section>
+                    <p>Lad farverne guide dig gennem vores smagfulde sortiment - fra lys og forfriskende til dyb og kompleks. Vores øl er ikke bare en drik, men en rejse gennem bryggerkunstens verden.</p>
+                         
+                    <a href="bryggeriet.html" class="viderestiller-knap">LÆS MERE OM BRYGNINGEN</a> <!-- "call to actions"-knap, viderestiller til produktsortiment -->
 
-                <section class="billedgalleri-p"> <!-- Dåse 5-->
-                    <a href="blomme.html"> <img src="images/2-blom.webp" alt="ZeroBuzz Brew dåse"></a><!--Linker til produktside-->
-                    <p>IPA - BLOMMER</p>
-                    <h4>0,0% ALKOHOL</h4>
-                </section>
+                </aside>
 
-                <section class="billedgalleri-p"> <!-- Dåse 6-->
-                    <a href="hindbaer.html"> <img src="images/2-hind.webp" alt="ZeroBuzz Brew dåse"></a><!--Linker til produktside-->
-                    <p>IPA - HINDBÆR</p>
-                    <h4>0,0% ALKOHOL</h4>
-                </section> 
-
-            </figure>
-        </article>
-
-        <article><!-- SORTIMENT - DE TRADITIONELLE-->
-            <figure class="produkt-overskrift">
-                <h1>DE TRADITIONELLE</h1>
-            </figure>
-
-            <figure id="billedgalleri-produkter">
-
-                <section class="billedgalleri-p"> <!-- Dåse 1-->
-                    <a href="pilsner.html"> <img src="images/2-pils.webp" alt="ZeroBuzz Brew dåse"></a><!--Linker til produktside-->
-                    <p>PILSNER</p>
-                    <h4>0,0% ALKOHOL</h4>
-                </section>
-
-                <section class="billedgalleri-p"> <!-- Dåse 2-->
-                    <a href="classic.html"> <img src="images/2-clas.webp" alt="ZeroBuzz Brew dåse"></a><!--Linker til produktside-->
-                    <p>CLASSIC</p>
-                    <h4>0,0% ALKOHOL</h4>
-                </section>
-
-                <section class="billedgalleri-p"> <!-- Dåse 3-->
-                    <a href="hvede.html"> <img src="images/2-hved.webp" alt="ZeroBuzz Brew dåse"></a><!--Linker til produktside-->
-                    <p>HVEDE - BLANC</p>
-                    <h4>0,0% ALKOHOL</h4>
-                </section>
-
-                <section class="billedgalleri-p"> <!-- Dåse 4-->
-                    <a href="pale.html"> <img src="images/2-pale.webp" alt="ZeroBuzz Brew dåse"></a><!--Linker til produktside-->
-                    <p>PALE ALE</p>
-                    <h4>0,0% ALKOHOL</h4>
-                </section>
+            </article>
+        </main>
 
 
-            </figure>
-        </article>
+
+
 
     </body>
 
 
-    <footer class="footer">
+    <footer class="footer"><!--FOOTER-->
         
         <figure>
             <a href="index.html"> <!-- Logo linker logo til forsiden-->

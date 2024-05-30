@@ -68,6 +68,12 @@ h3 {
     font-style: italic; /* angiver kussiv */
 }
 
+/* Styling - små noter */
+h4 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
 /* Styling - alm. tekst */
 p {
     padding-bottom: 10px; /* angiver afstand til nedenforstående*/
@@ -367,16 +373,19 @@ section.billedgalleri img {
 .b-forside-tekst {
     text-align: center; /* Centrerer teksten */
     position: absolute ;
-    top: 53.5%; /* Placering af teksten fra toppen - så det flugter med glasset*/
-    left: 50%; /* Centrerer teksten - også responsivt */
-    transform: translate(-50%, -50%); /* Centrerer teksten nøjagtigt midt på billedet - også responsivt*/
     background-color:rgba(148, 120, 86, 0); /* Gennemsigtig baggrundsfarve */
     color: var(--baggrundsfarve); /*Skriftfarve*/
     max-width: 850px; /* Bredden på teskt "feltet"*/
     font-size: 60px; /*Skriftstørrelse*/
     font-weight: 800; /*Font-tykkelse*/
+
+    /*Har brugt chat-gpt til at hjælpe, med at placere teksten ovenpå billedet her, da andre måder ikke virkede optimalt*/
+    top: 53.5%; /* Placering af teksten fra toppen - så det flugter med glasset*/
+    left: 50%; /* Centrerer teksten - også responsivt */
+    transform: translate(-50%, -50%); /* Centrerer teksten nøjagtigt midt på billedet - også responsivt*/
 }
 
+/* Styling - svg, pil ned*/
 .pil-ned-bryggeri {
     bottom: 30px; /*Afstand fra bund*/
     position: absolute; /* Absolut, for at fastholde centreret placering*/
@@ -386,36 +395,139 @@ section.billedgalleri img {
     width: 100%; /*centrerer ud fra hele bredden af siden*/
 }
 
-
 /* Placering - alle elementer i denne sektion */
 .midt-tekst-bryggeriet {
     display: flex;
 }
 
-.billed-artikel-bryggeri {
-    flex: 1; /* Placerer billederne ved siden af tekst*/
-    padding: 70px 30px 50px 30px; /* Luft omkring billederne*/
+    .billed-artikel-bryggeri {
+        flex: 1; /* Placerer billederne ved siden af tekst*/
+        padding: 100px 50px 0px 100px; /* Luft omkring billederne*/
+    }
+
+    .billed-artikel-bryggeri img {
+        padding-bottom: 30px; /*Luft mellem billederne*/
+    }
+
+    .artikel-bryggeri {
+        padding: 100px 100px 0px 50px; /*Luft omkring tekst*/
+    }
+
+    .artikel-bryggeri p {
+        line-height: 1.7; /*Linjeafstand*/
+        padding-bottom: 15px; /* Afstand mellem afsnit*/
+    }
+
+    .artikel-bryggeri h2 {
+        padding-bottom: 20px; /* Afstand mellem afsnit*/
+    }
+
+    .h2-luft{
+        padding-top: 38px;
+    }
+
+/* Styling - knappen "SE UDVALGET" */
+.sortiment-knap {
+    background-color:var(--brun); /* Farve på knap */
+    color: var(--hvid); /* Tekstfarve */
+    font-size: 25px; /* Skriftstørrelse */
+    font-weight: 500; /* Skrifttykkelse*/
+    border-radius: 15px; /* Rundede hjørner */ 
+    padding: 10px 20px; /* Indvendig margen */
+    box-shadow: 0 4px 8px var(--moerk-skrift); /* Tilføjer skyggeeffekt */
+    transition: transform 0.3s, box-shadow 0.3s; /* Glat overgangseffekt */
+    position: absolute; /* Absolut positionering */
+    right: 130px; /* Angiver afstanden fra højre */
 }
 
-.artikel-bryggeri {
-    padding: 50px; /*Luft omkring tekst*/
+/* Effekter - Hover "SE UDVALGET" knap */
+.sortiment-knap:hover {
+    transform: scale(1.3); /* Forstørrer ved hover */
+    font-weight: bold; /* Tykkelse på font ved hover */
+    box-shadow: 0 8px 16px var(--moerk-skrift); /* Forstærker skyggeeffekten ved hover */
 }
 
-.artikel-bryggeri p {
-    line-height: 1.8; /*Linjeafstand*/
-    padding-bottom: 20px; /* Afstand mellem afsnit*/
+
+
+/*--------- PRODUKTER - HTML -------------*/
+
+/* Styling - tekstsektion */
+.produkt-overskrift {
+    text-align: center; /* Centrerer teksten */
+    display: flex; 
+    flex-direction: column; /* sætter i lodret række*/
+    align-items: center; /* Centrerer elementer*/
 }
+
+/* Styling - h1, øverst */
+.produkt-overskrift h1 {
+    padding-top: 25px; /* Afstand til ovneforstående elementer*/
+}
+
+/* Styling - billedgalleri */
+section.billedgalleri-p img {
+    max-width: 250px; /* Angiver billedernes størrelse*/
+    height: auto; /* Justerer automatisk højden */
+    border-radius: 5px; /* Afrundede kanter på img */
+    border: solid 0.8px var(--brun);
+  }
+
+section.billedgalleri-p p {
+    padding-bottom: 2px; /* angiver afstand til nedenforstående*/
+    font-weight: 600; /*Fed skrifttype*/
+}
+
+/* Placering - billedgalleri */
+#billedgalleri-produkter {
+    margin-top: 10px; /* Afstand til ovenforstående */
+    margin: 10px 100px 20px 100px; /* Afstand til nedenforstående */
+    display: flex;
+    justify-content: center; /* Centrerer billedgalleriet */
+    flex-wrap: wrap; /* Tillader fleksibel layout */
+    gap: 30px; /* Afstand mellem billederne */
+}
+
+/* Styling - knappen "SE UDVALGET" */
+.viderestiller-knap {
+    background-color:var(--grøn); /* Farve på knap */
+    color: var(--hvid); /* Tekstfarve */
+    font-size: 25px; /* Skriftstørrelse */
+    font-weight: 500; /* Skrifttykkelse*/
+    border-radius: 15px; /* Rundede hjørner */ 
+    padding: 10px 20px; /* Indvendig margen */
+    box-shadow: 0 4px 8px var(--moerk-skrift); /* Tilføjer skyggeeffekt */
+    transition: transform 0.3s, box-shadow 0.3s; /* Glat overgangseffekt */
+    position: absolute; /* Absolut positionering */
+    margin-top: 80px;
+    right: 130px; /* Angiver afstanden fra højre */
+}
+
+/* Effekter - Hover "SE UDVALGET" knap */
+.viderestiller-knap:hover {
+    transform: scale(1.3); /* Forstørrer ved hover */
+    font-weight: bold; /* Tykkelse på font ved hover */
+    box-shadow: 0 8px 16px var(--moerk-skrift); /* Forstærker skyggeeffekten ved hover */
+}
+
+/* Styling - tilbage funktion/svg */
+.tilbage-svg {
+    margin-left: 40px;
+}
+
+
 
 
 /*-------------- FOOTER --------------------*/
 
 /* Placering - generelt for footer */
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
+    display: flex; /*Placering af elementer*/
+    flex-direction: column; /*Opstilling */
+    align-items: center; /*Centrret logo*/
+    text-align: center; /*Centreret tekst*/
+    padding-top: 30px; /*Afstand til streg, ned mod footer*/
+    margin-top: 70px; /*Afstand til ovenforstående elementer*/
+    border-top: 2px solid var(--brun); /*Streg - tykkelses og farve*/
 }
 
 /* Placering - tekst i footer */
@@ -443,7 +555,7 @@ section.billedgalleri img {
 /* Placering - Ikoner */
 .footer-ikoner {
     display: flex;
-    position: absolute;
+    position: absolute; /*Absolut placering*/
     right: 80px; /* Afstand fra kant, til ikoner*/
     gap: 10px; /* Mellemrum mellem ikoner */
 }
@@ -452,6 +564,7 @@ section.billedgalleri img {
 .footer-ikoner:hover {
     transform: scale(1.3); /* Forstørrer ved hover */
 }
+
 
 
 /*------------- RESPONSIVT ---------------*/
@@ -478,7 +591,7 @@ section.billedgalleri img {
 /* Mobile view - max-width er sat til der hvor "tablets and smaller screens"-starter */
 @media only screen and (max-width: 1024px) {
 
-    /* ------- STYLING AF NAVIGATION ------ */
+ /* ------- STYLING AF NAVIGATION ------ */
 
     .nav-styling {
         display: none; /* Skjul nav som standard */
@@ -523,7 +636,7 @@ section.billedgalleri img {
     }
 
 
-    /* --------- STYLING AF FORSIDE ---------*/
+ /* --------- STYLING AF FORSIDE ---------*/
 
     .forside-img {
         margin-top: 40px; /* Juster margenen øverst på siden, når nav bliver til ikon */
@@ -561,7 +674,7 @@ section.billedgalleri img {
     }
 
 
-    /*---- BRYGGERIET - HTML ----*/
+ /*---- BRYGGERIET - HTML ----*/
 
     /*Ændring i skriftstørrelse*/
     .b-forside-tekst {
@@ -571,5 +684,58 @@ section.billedgalleri img {
         top: 40%; /* Placering af teksten fra toppen - så det flugter med glasset*/
     }
 
+    /*Andring i størrelser på artiklerne */
+    .billed-artikel-bryggeri img {
+        max-width: 350px; /*Ændrer størrelse på billede*/
+    }
+
+        .billed-artikel-bryggeri {
+            padding-left: 10px; /*Ændrer luft omkring billede*/
+        }
+        .artikel-bryggeri p {
+            font-size: 12px;
+            padding-bottom: 10px; /* Afstand mellem afsnit*/
+        }
+
+        .artikel-bryggeri {
+            padding: 100px 40px 0px 0px; /*Luft omkring tekst*/
+            }
+
+        /* Styling - knappen "SE UDVALGET" */
+        .sortiment-knap {
+        background-color:var(--brun); /* Farve på knap */
+        color: var(--hvid); /* Tekstfarve */
+        font-size: 15px; /* Skriftstørrelse */
+        font-weight: 400; /* Skrifttykkelse*/
+        right: 80px; /* Angiver afstanden fra højre */ }
+
+
+    /* Styling - svg, pil ned*/
+    .pil-ned-bryggeri {
+        display: none; /* Fjerner pilen, når skærmen bliver mindre, her ses artiklen - så giver den ikke menning*/}
+
+
+
+/* ---- PRODUKTER - HTML -----*/
+    .viderestiller-knap  {
+        font-size: 15px; /* Skriftstørrelse */
+        font-weight: 400; /* Skrifttykkelse*/
+        right: 80px; /* Angiver afstanden fra højre */
+        margin-top: 30px;
+
 }
+
+
+
+
+
+/*-------- FOOTER ------- */
+
+    /* Ændiring i afstand til footer*/
+    .footer {
+        margin-top: 100px;
+     }
+
+}
+
 
