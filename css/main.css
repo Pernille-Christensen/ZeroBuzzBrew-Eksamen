@@ -544,7 +544,7 @@ section.billedgalleri-e h2 {
 /*--- EVENTS - ØLSAMGNING ----*/
 
 /* Placering - billedgalleri */
-#events-side {
+.events-side {
     margin-top: 0px; /* Afstand til ovenforstående */
     margin-bottom: 60px; /* Afstand til nedenforstående */
     display: flex; /*Sørger for placering*/
