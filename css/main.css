@@ -427,7 +427,7 @@ section.billedgalleri img {
     }
 
     .h2-luft{
-        padding-top: 38px;
+        padding-top: 20px;
     }
 
 /* Styling - knappen "SE UDVALGET" */
@@ -441,7 +441,8 @@ section.billedgalleri img {
     box-shadow: 0 4px 8px var(--moerk-skrift); /* Tilføjer skyggeeffekt */
     transition: transform 0.3s, box-shadow 0.3s; /* Glat overgangseffekt */
     position: absolute; /* Absolut positionering */
-    right: 130px; /* Angiver afstanden fra højre */
+    right: 150px; /* Angiver afstanden fra højre */
+    margin-bottom: 10px;
 }
 
 /* Effekter - Hover "SE UDVALGET" knap */
