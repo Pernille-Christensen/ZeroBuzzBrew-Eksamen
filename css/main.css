@@ -987,9 +987,9 @@ section.event-billede img {
     /*Ændring i skriftstørrelse*/
     .b-forside-tekst {
         max-width: 600px; /* Bredden på teskt "feltet"*/
-        font-size: 40px; /*Skriftstørrelse*/
-        font-weight: 600; /*Font-tykkelse*/
-        top: 45%; /* Placering af teksten fra toppen*/
+        font-size: 30px; /*Skriftstørrelse*/
+        font-weight: 500; /*Font-tykkelse*/
+        top: 40%; /* Placering af teksten fra toppen*/
     }
 
     /*Andring i størrelser på artiklerne */
@@ -1018,19 +1018,7 @@ section.event-billede img {
         right: 80px; /* Angiver afstanden fra højre */ }
 
 
-    /* Styling - svg, pil ned*/
-    .pil-ned-bryggeri {
-        display: none; /* Fjerner pilen, når skærmen bliver mindre, her ses artiklen - så giver den ikke menning*/}
-
-
-/* ---- PRODUKTER - HTML -----*/
-    .viderestiller-knap  {
-        font-size: 15px; /* Skriftstørrelse */
-        font-weight: 400; /* Skrifttykkelse*/
-        right: 80px; /* Angiver afstanden fra højre */
-        margin-top: 30px;
-        }
-
+ 
 
 /* ---- EVENTS - HTML ---- */
 
@@ -1147,20 +1135,40 @@ section.event-billede img {
 /* ---- EVENTS - HTML ---- */
 
     /* Placering - p  */
-     .artikel-events p {
-         padding: 0 100px 20px 100px;
+    .artikel-events p {
+         padding: 0 50px 20px 50px; /*Luft omkring tekststykke*/
+         font-size: 12px; /*Skriftstørrelse*/
         }
 
+    /*Overskrift i artiklen*/
+    .artikel-events h1 {
+        font-size: 30px; /*Skriftstørrelse*/
+    }
+
+    /*Størrelse på billeder*/
+    .event-billede img {
+        width: 500px; /* Bredde på billede*/
+    }
     /* Placering - h2 */
     .artikel-events h2 {
-        padding: 10px 100px 20px 100px;
-         }
+        padding: 10px 50px 20px 50px; /*Luft omkring tekststykke*/
+        font-size: 17px ; /*Skriftstørrelse*/
+        }
 
     /* Styling - billedgalleri */
     section.event-billede img {
         max-width: 600px; /* Angiver billedernes størrelse*/
         }
+ 
+    /*Størrelse på overskrift*/
+    .produkt-overskrift h1 {
+        font-size: 30px; /*Skriftstørrelse*/
+    }
 
+    /*Størrelse på billede*/
+    .billedgalleri-e img {
+        width: 350px; /* Angiver billedernes størrelse*/
+    }
 
 /* ---- KONTAKT - HTML ---- */
 
