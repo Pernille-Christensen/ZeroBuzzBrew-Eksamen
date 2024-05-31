@@ -985,16 +985,16 @@ section.event-billede img {
 /*---- BRYGGERIET - HTML ----*/
 
     /*Ændring i skriftstørrelse*/
-    .b-forside-tekst {
-        max-width: 600px; /* Bredden på teskt "feltet"*/
+    .b-forside-tekst h1{
+        max-width: 500px; /* Bredden på teskt "feltet"*/
         font-size: 30px; /*Skriftstørrelse*/
         font-weight: 500; /*Font-tykkelse*/
-        top: 40%; /* Placering af teksten fra toppen*/
+        top: 30%; /* Placering af teksten fra toppen*/
     }
 
     /*Andring i størrelser på artiklerne */
     .billed-artikel-bryggeri img {
-        max-width: 350px; /*Ændrer størrelse på billede*/
+        max-width: 250px; /*Ændrer størrelse på billede*/
     }
 
         .billed-artikel-bryggeri {
@@ -1009,8 +1009,8 @@ section.event-billede img {
             padding: 100px 40px 0px 0px; /*Luft omkring tekst*/
             }
 
-        /* Styling - knappen "SE UDVALGET" */
-        .sortiment-knap {
+    /* Styling - knappen "SE UDVALGET" */
+    .sortiment-knap {
         background-color:var(--brun); /* Farve på knap */
         color: var(--hvid); /* Tekstfarve */
         font-size: 15px; /* Skriftstørrelse */
