@@ -68,22 +68,51 @@
             </nav> 
         </header>   
 
-        <main class="artikel-events"> <!--samme klasse som events, samme styling-->
-        <h1>KONTAKT OS</h1> <!-- Overskrift-->
+        <main><!-- KONTAKT -->
+        <aside class="events-side"> <!--styler generelt for siden-->
+            <figure class="artikel-events"> <!--Styler elementer-->
+                <h1>KONTAKT OS</h1> <!-- Overskrift-->
 
-        <!-- indledende tekststykke -->
-        <p>Vi værdsætter din interesse i Zero Buzz Brew og står klar til at hjælpe med enhver forespørgsel. Uanset om du søger information om samarbejdsmuligheder, priser, køb og salg, detaljer om vores virksomhed, eller andet, er vi her for at svare på dine spørgsmål.</p>
+                <!-- Kontakt - interesse -->
+                <p>Vi værdsætter din interesse i Zero Buzz Brew og står klar til at hjælpe med enhver forespørgsel. Uanset om du søger information om samarbejdsmuligheder, priser, køb og salg, detaljer om vores virksomhed, eller andet, er vi her for at svare på dine spørgsmål.</p>
 
-        <p>Udfyld venligst nedenstående formular, så vender vi tilbage til dig hurtigst muligt. Vi ser frem til at høre fra dig!</p>
+                <p>Udfyld venligst nedenstående formular, så vender vi tilbage til dig hurtigst muligt. </p>
 
-        <!--Kontaktformular-->
+                <p>Vi ser frem til at høre fra dig!</p>
 
+            
+                <!-- Formular, fra w3 schools -->
+                <form class="formular-kontakt"><!--Kontaktformular-->
+                    <label for="navn">Navn:</label> <!--Indsæt navn-->
+                    <input type="text" id="navn" name="navn" required>
 
+                    <label for="email">Email:</label> <!--Indsæt Email-->
+                    <input type="email" id="email" name="email" required>
 
+                    <label for="telefon">Telefonnummer:</label> <!--Telefon nr.-->
+                    <input type="tel" id="telefon" name="telefon">
 
-        <!--Tekststykke - info om privatlivspolitik -->
-        <p>Ved at udfylde og indsende denne formular accepterer du vores privatlivspolitik og giver samtykke til, at vi kan kontakte dig vedrørende din forespørgsel.</p>
+                    <label for="emne">Hvad kan vi hjælpe dig med?</label> <!--Hvad kontakten drejer sig om-->
+                    <select id="emne" name="emne" required> <!--Valgmuligheder-->
+                        <option value="samarbejde">Nyt samarbejde - eller har du spørgsmål til et igangværende</option>
+                        <option value="priser">Priser/Køb og salg</option>
+                        <option value="information">Information om virksomheden</option>
+                        <option value="andet">Andet</option>
+                    </select>
 
+                    <label for="besked">Besked:</label><!--Skriv en besked-->
+                    <textarea id="besked" name="besked" rows="4" required></textarea>
+                </form>
+
+                <!--Info om privatlivspolitik -->
+                <p>Ved at udfylde og indsende denne formular accepterer du vores privatlivspolitik og giver samtykke til, at vi kan kontakte dig vedrørende din forespørgsel.</p>
+                
+                <figure class="events-side">
+                    <a class="bryggeriets-historie-knap">Send besked</a><!--Knap som sender forespørgslen-->
+                </figure>
+                
+            </figure>
+        </aside>
 
         </main>
 

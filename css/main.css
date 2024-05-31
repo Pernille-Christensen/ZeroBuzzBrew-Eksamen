@@ -574,7 +574,31 @@ section.event-billede img {
     padding: 10px 220px 60px 220px; /* Luft omkring tekst*/
 }
 
+/*-------------- KONTAKT -------------------*/
 
+/* Styling - Kontaktformular */
+.formular-kontakt {
+    display: flex; /*Sikrer placering*/ 
+    flex-direction: column; /*Placering i lodret række under hinanden*/
+    padding: 10px 220px 10px 220px; /* Luft omkring tekst*/;
+}
+
+/* Styling - tekst i formular*/
+.formular-kontakt label {
+    margin-bottom: 5px;
+    font-weight: 500; /*Skrifttykkelse*/
+    text-align: left; /*Venstrestiller tekst*/
+}
+
+/* Styling - felter i formular*/
+.formular-kontakt input,
+.formular-kontakt select,
+.formular-kontakt textarea {
+    margin-bottom: 20px; /* Afstand til nedenforstående element*/
+    padding: 10px; /* luft omkring skrift, i boks*/
+    border: 1px solid var(--brun);
+    border-radius: 15px; /*Samme runding som knapper*/
+}
 
 
 /*-------------- FOOTER --------------------*/
@@ -805,6 +829,14 @@ section.event-billede img {
             border-radius: 5px; /* Afrundede kanter på img */
         }
 
+/* ---- KONTAKT - HTML ---- */
+
+        /* Styling - Kontaktformular */
+        .formular-kontakt {
+            display: flex; /*Sikrer placering*/ 
+            flex-direction: column; /*Placering i lodret række under hinanden*/
+            padding: 10px 100px 10px 100px; /* Luft omkring tekst*/;
+        }
 
 
 
