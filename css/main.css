@@ -561,6 +561,7 @@ section.event-billede img {
 /* Placering - h1 */
 .artikel-events h1 {
     text-align: center; /*Centrering af tekst*/
+    padding-bottom: 40px;
 }
 
 /* Placering - p  */
