@@ -539,7 +539,8 @@ section.billedgalleri-e img {
 }
 
 section.billedgalleri-e h2 {
-    padding-bottom: 2px; /* angiver afstand til nedenforstående*/
+    padding-bottom: 3px; /* angiver afstand til nedenforstående*/
+    padding-top: 5px;
 }
 
 /*--- EVENTS - ØLSAMGNING & LØBEKLUB ---*/
@@ -651,9 +652,10 @@ section.event-billede img {
 
 
 
+
 /*------------- RESPONSIVT ---------------*/
 
-/* desktop view - min-width er sat til der hvor "desktops and large screens"-starter */
+/* Desktops and large screens*/
 @media only screen and (min-width: 1025px) {
 
     /* STYLING AF NAVIGATION */
@@ -672,10 +674,14 @@ section.event-billede img {
 
 }
 
-/* Tablets (landskab) og mindre laptops */
+
+
+
+
+/* Tablets og mindre laptops */
 @media only screen and (max-width: 1024px)  {
 
- /* ------- STYLING AF NAVIGATION ------ */
+/* ------- STYLING AF NAVIGATION ------ */
 
     .nav-styling {
         display: none; /* Skjul nav som standard */
@@ -719,13 +725,7 @@ section.event-billede img {
         padding: 20px; /*Luft omkring logo*/
     }
 
-
- /* --------- STYLING AF FORSIDE ---------*/
-
-    .forside-img {
-        margin-top: 40px; /* Juster margenen øverst på siden, når nav bliver til ikon */
-    }
-
+/* --------- STYLING AF FORSIDE ---------*/
 
     /*Ændring i størrelser på knap*/
     .nyheder-knap {
@@ -738,10 +738,11 @@ section.event-billede img {
 
     /*Ændring i størrelser på tekst under knap*/
     #tekst-under-knap {
-        bottom: 10px; /* Placering fra bunden af img */
-        right: 40px; /* Placering fra højre kant*/
+        bottom: 40px; /* Placering fra bunden af img */
+        right: 20px; /* Placering fra højre kant*/
         max-width: 320px; /* Bredden på tekststykket */
         font-weight: 400;
+        font-size: 16px;
     }
     /*Ændring i breddem på tekststykke, nederst på siden*/
     .tekst-over-knap {
@@ -757,15 +758,14 @@ section.event-billede img {
         font-size: 20px;
     }
 
-
- /*---- BRYGGERIET - HTML ----*/
+/*---- BRYGGERIET - HTML ----*/
 
     /*Ændring i skriftstørrelse*/
     .b-forside-tekst {
         max-width: 600px; /* Bredden på teskt "feltet"*/
         font-size: 40px; /*Skriftstørrelse*/
         font-weight: 600; /*Font-tykkelse*/
-        top: 40%; /* Placering af teksten fra toppen - så det flugter med glasset*/
+        top: 45%; /* Placering af teksten fra toppen*/
     }
 
     /*Andring i størrelser på artiklerne */
@@ -799,7 +799,6 @@ section.event-billede img {
         display: none; /* Fjerner pilen, når skærmen bliver mindre, her ses artiklen - så giver den ikke menning*/}
 
 
-
 /* ---- PRODUKTER - HTML -----*/
     .viderestiller-knap  {
         font-size: 15px; /* Skriftstørrelse */
@@ -809,35 +808,34 @@ section.event-billede img {
         }
 
 
-
 /* ---- EVENTS - HTML ---- */
 
-        /* Placering - p  */
-        .artikel-events p {
-            padding: 0 100px 20px 100px;
+    /* Placering - p  */
+     .artikel-events p {
+         padding: 0 100px 20px 100px;
         }
 
-        /* Placering - h2 */
-        .artikel-events h2 {
-            padding: 10px 100px 20px 100px;
+    /* Placering - h2 */
+    .artikel-events h2 {
+        padding: 10px 100px 20px 100px;
+         }
+
+    /* Styling - billedgalleri */
+    section.event-billede img {
+        max-width: 750px; /* Angiver billedernes størrelse*/
+        height: auto; /* Justerer automatisk højden */
+        border-radius: 5px; /* Afrundede kanter på img */
         }
 
-        /* Styling - billedgalleri */
-        section.event-billede img {
-            max-width: 750px; /* Angiver billedernes størrelse*/
-            height: auto; /* Justerer automatisk højden */
-            border-radius: 5px; /* Afrundede kanter på img */
-        }
 
 /* ---- KONTAKT - HTML ---- */
 
-        /* Styling - Kontaktformular */
-        .formular-kontakt {
-            display: flex; /*Sikrer placering*/ 
-            flex-direction: column; /*Placering i lodret række under hinanden*/
-            padding: 10px 100px 10px 100px; /* Luft omkring tekst*/;
+     /* Styling - Kontaktformular */
+    .formular-kontakt {
+        display: flex; /*Sikrer placering*/ 
+        flex-direction: column; /*Placering i lodret række under hinanden*/
+        padding: 10px 100px 10px 100px; /* Luft omkring tekst*/;
         }
-
 
 
 /*-------- FOOTER ------- */
@@ -850,18 +848,358 @@ section.event-billede img {
 }
 
 
-/* Mobile view - max-width er sat til der hvor "tablets and smaller screens"-starter */
-@media only screen and (max-width: 1024px) {
 
-    /* ------- STYLING AF NAVIGATION ------ */
 
+
+/* Tablets i portræt */
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    
+/* --------- STYLING AF FORSIDE ---------*/
+
+    /*Ændring i størrelser på knap*/
+    .nyheder-knap {
+        bottom: 90px; /* Angiver afstanden fra bunden */
+        right: 60px; /* Angiver afstanden fra højre */
+        font-size: 20px; /* Skriftstørrelse */
+        font-weight: 500; /* Skrifttykkelse*/
+    }
+
+    /*Ændring i størrelser på tekst under knap*/
+    #tekst-under-knap {
+        bottom: 20px; /* Placering fra bunden af img */
+        right: 10px; /* Placering fra højre kant*/
+        max-width: 320px; /* Bredden på tekststykket */
+        font-size: 14px; /*Skriftstørrelse*/
+    }
+    /*Ændring i breddem på tekststykke, nederst på siden*/
+    .tekst-over-knap {
+        font-size: 32px;
+    }
+    
+/*---- BRYGGERIET - HTML ----*/
+
+    /*Ændring i skriftstørrelse*/
+    .b-forside-tekst {
+        max-width: 600px; /* Bredden på teskt "feltet"*/
+        font-size: 35px; /*Skriftstørrelse*/
+        font-weight: 600; /*Font-tykkelse*/
+        top: 42%; /* Placering af teksten fra toppen - så det flugter med glasset*/
+    }
+
+    /*Andring i størrelser på artiklerne */
+    .billed-artikel-bryggeri img {
+        max-width: 300px; /*Ændrer størrelse på billede*/
+        margin-left: 15px; /*Afstand til venstre side*/
+        padding-bottom: 80px;
+        padding-top: 0px;
+    }
+
+    .billed-artikel-bryggeri {
+        padding-top: 50px; /*Ændrer luft omkring billede*/
+    }
+        .artikel-bryggeri p {
+            font-size: 12px;
+            padding-bottom: 8px; /* Afstand mellem afsnit*/
+        }
+
+        .artikel-bryggeri h2 {
+            font-size: 17px; /*Skriftstørrelse*/
+            padding-bottom: 5px; /*Afstand til neden*/
+        }
+
+        .artikel-bryggeri {
+            padding: 50px 40px 0px 0px; /*Luft omkring tekst*/
+            }
+
+/* ---- PRODUKTER - HTML -----*/
+
+    .produkt-overskrift h1 {
+        font-size: 40px;
+    }
+
+    .viderestiller-knap  {
+        font-size: 15px; /* Skriftstørrelse */
+        font-weight: 400; /* Skrifttykkelse*/
+        right: 80px; /* Angiver afstanden fra højre */
+        margin-top: 20px;
+        }
+
+    .artikel-bryggeri h1 {
+        font-size: 30px; /*Skriftstørrelse*/
+    }
+
+/* ---- EVENTS - HTML ---- */
+
+    /* Placering - p  */
+     .artikel-events p {
+         padding: 0 80px 20px 95px; /*luft omkring*/
+         font-size: 15px; /*Skriftstørrelse*/
+        }
+
+    /* Placering - h2 */
+    .artikel-events h1 {
+        font-size: 40px; /*Størrelse på overskrift*/
+         }
+}
+
+
+
+
+
+/* Mobiltelefoner landskab */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    
+/* --------- STYLING AF FORSIDE ---------*/
+
+    /*Ændring i størrelser på knap*/
+    .nyheder-knap {
+        bottom: 120px; /* Angiver afstanden fra bunden */
+        border-radius: 15px; /* Rundede hjørner */ 
+        right: 90px; /* Angiver afstanden fra højre */
+        font-size: 25px; /* Skriftstørrelse */
+        font-weight: 500; /* Skrifttykkelse*/
+    }
+
+    /*Ændring i størrelser på tekst under knap*/
+    #tekst-under-knap {
+        bottom: 40px; /* Placering fra bunden af img */
+        right: 20px; /* Placering fra højre kant*/
+        max-width: 320px; /* Bredden på tekststykket */
+        font-weight: 400;
+        font-size: 16px;
+    }
+    /*Ændring i breddem på tekststykke, nederst på siden*/
+    .tekst-over-knap {
+        width: 230px;
+        font-size: 35px;
+    }
+    /* Ændring i afstand til bund, nederst på siden */
+    .tekst-bund-forside {
+        bottom: 10px;
+    }
+    /* Ændring i størrelse på knapper */
+    .lobeklub-knap, .bryggeriets-historie-knap {
+        font-size: 20px;
+    }
+
+/*---- BRYGGERIET - HTML ----*/
+
+    /*Ændring i skriftstørrelse*/
+    .b-forside-tekst {
+        max-width: 600px; /* Bredden på teskt "feltet"*/
+        font-size: 40px; /*Skriftstørrelse*/
+        font-weight: 600; /*Font-tykkelse*/
+        top: 45%; /* Placering af teksten fra toppen*/
+    }
+
+    /*Andring i størrelser på artiklerne */
+    .billed-artikel-bryggeri img {
+        max-width: 350px; /*Ændrer størrelse på billede*/
+    }
+
+        .billed-artikel-bryggeri {
+            padding-left: 10px; /*Ændrer luft omkring billede*/
+        }
+        .artikel-bryggeri p {
+            font-size: 12px;
+            padding-bottom: 10px; /* Afstand mellem afsnit*/
+        }
+
+        .artikel-bryggeri {
+            padding: 100px 40px 0px 0px; /*Luft omkring tekst*/
+            }
+
+        /* Styling - knappen "SE UDVALGET" */
+        .sortiment-knap {
+        background-color:var(--brun); /* Farve på knap */
+        color: var(--hvid); /* Tekstfarve */
+        font-size: 15px; /* Skriftstørrelse */
+        font-weight: 400; /* Skrifttykkelse*/
+        right: 80px; /* Angiver afstanden fra højre */ }
+
+
+    /* Styling - svg, pil ned*/
+    .pil-ned-bryggeri {
+        display: none; /* Fjerner pilen, når skærmen bliver mindre, her ses artiklen - så giver den ikke menning*/}
+
+
+/* ---- PRODUKTER - HTML -----*/
+    .viderestiller-knap  {
+        font-size: 15px; /* Skriftstørrelse */
+        font-weight: 400; /* Skrifttykkelse*/
+        right: 80px; /* Angiver afstanden fra højre */
+        margin-top: 30px;
+        }
+
+
+/* ---- EVENTS - HTML ---- */
+
+    /* Placering - p  */
+     .artikel-events p {
+         padding: 0 100px 20px 100px;
+        }
+
+    /* Placering - h2 */
+    .artikel-events h2 {
+        padding: 10px 100px 20px 100px;
+         }
+
+    /* Styling - billedgalleri */
+    section.event-billede img {
+        max-width: 750px; /* Angiver billedernes størrelse*/
+        height: auto; /* Justerer automatisk højden */
+        border-radius: 5px; /* Afrundede kanter på img */
+        }
+
+
+/* ---- KONTAKT - HTML ---- */
+
+     /* Styling - Kontaktformular */
+    .formular-kontakt {
+        display: flex; /*Sikrer placering*/ 
+        flex-direction: column; /*Placering i lodret række under hinanden*/
+        padding: 10px 100px 10px 100px; /* Luft omkring tekst*/;
+        }
+
+/* --------- STYLING AF FORSIDE ---------*/
+
+    /*Ændring i størrelser på knap*/
+    .nyheder-knap {
+        bottom: 120px; /* Angiver afstanden fra bunden */
+        border-radius: 15px; /* Rundede hjørner */ 
+        right: 90px; /* Angiver afstanden fra højre */
+        font-size: 25px; /* Skriftstørrelse */
+        font-weight: 500; /* Skrifttykkelse*/
+    }
+
+    /*Ændring i størrelser på tekst under knap*/
+    #tekst-under-knap {
+        bottom: 40px; /* Placering fra bunden af img */
+        right: 20px; /* Placering fra højre kant*/
+        max-width: 320px; /* Bredden på tekststykket */
+        font-weight: 400;
+        font-size: 16px;
+    }
+    /*Ændring i breddem på tekststykke, nederst på siden*/
+    .tekst-over-knap {
+        width: 230px;
+        font-size: 35px;
+    }
+    /* Ændring i afstand til bund, nederst på siden */
+    .tekst-bund-forside {
+        bottom: 10px;
+    }
+    /* Ændring i størrelse på knapper */
+    .lobeklub-knap, .bryggeriets-historie-knap {
+        font-size: 20px;
+    }
+
+/*---- BRYGGERIET - HTML ----*/
+
+    /*Ændring i skriftstørrelse*/
+    .b-forside-tekst {
+        max-width: 600px; /* Bredden på teskt "feltet"*/
+        font-size: 40px; /*Skriftstørrelse*/
+        font-weight: 600; /*Font-tykkelse*/
+        top: 45%; /* Placering af teksten fra toppen*/
+    }
+
+    /*Andring i størrelser på artiklerne */
+    .billed-artikel-bryggeri img {
+        max-width: 350px; /*Ændrer størrelse på billede*/
+    }
+
+        .billed-artikel-bryggeri {
+            padding-left: 10px; /*Ændrer luft omkring billede*/
+        }
+        .artikel-bryggeri p {
+            font-size: 12px;
+            padding-bottom: 10px; /* Afstand mellem afsnit*/
+        }
+
+        .artikel-bryggeri {
+            padding: 100px 40px 0px 0px; /*Luft omkring tekst*/
+            }
+
+        /* Styling - knappen "SE UDVALGET" */
+        .sortiment-knap {
+        background-color:var(--brun); /* Farve på knap */
+        color: var(--hvid); /* Tekstfarve */
+        font-size: 15px; /* Skriftstørrelse */
+        font-weight: 400; /* Skrifttykkelse*/
+        right: 80px; /* Angiver afstanden fra højre */ }
+
+
+    /* Styling - svg, pil ned*/
+    .pil-ned-bryggeri {
+        display: none; /* Fjerner pilen, når skærmen bliver mindre, her ses artiklen - så giver den ikke menning*/}
+
+
+/* ---- PRODUKTER - HTML -----*/
+    .viderestiller-knap  {
+        font-size: 15px; /* Skriftstørrelse */
+        font-weight: 400; /* Skrifttykkelse*/
+        right: 80px; /* Angiver afstanden fra højre */
+        margin-top: 30px;
+        }
+
+
+/* ---- EVENTS - HTML ---- */
+
+    /* Placering - p  */
+     .artikel-events p {
+         padding: 0 100px 20px 100px;
+        }
+
+    /* Placering - h2 */
+    .artikel-events h2 {
+        padding: 10px 100px 20px 100px;
+         }
+
+    /* Styling - billedgalleri */
+    section.event-billede img {
+        max-width: 600px; /* Angiver billedernes størrelse*/
+        }
+
+
+/* ---- KONTAKT - HTML ---- */
+
+    /* Styling - Kontaktformular */
+    .formular-kontakt {
+        display: flex; /*Sikrer placering*/ 
+        flex-direction: column; /*Placering i lodret række under hinanden*/
+        padding: 30px; /* Luft omkring tekst*/;
+        font-size: 15px;
+        }
+
+    /* Styling - felter i formular*/
+    .formular-kontakt input,
+    .formular-kontakt select,
+    .formular-kontakt textarea {
+        margin-bottom: 20px; /* Afstand til nedenforstående element*/
+        padding: 10px; /* luft omkring skrift, i boks*/
+        border: 1px solid var(--brun);
+        border-radius: 15px; /*Samme runding som knapper*/
+        max-width: 450px;
+        font-size: 12px;
+        }
+    
+    .events-side p {
+        font-size: 15px;
+        padding: 0 30px 15px 30px; /* Luft omkring tekst*/
+        }
 
 }
 
 
 
-/* Tablets (portræt) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* Mobiltelefoner - portræt */
+@media only screen and (max-width: 480px) {
     
+/*-------- FOOTER ------- */
+    .footer {
+        display: none;
+    }
+
 
 }
