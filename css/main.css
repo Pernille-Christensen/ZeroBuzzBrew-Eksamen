@@ -214,7 +214,7 @@ p {
 
 /* Effekter - Hover "NYHEDER" knap */
 .nyheder-knap:hover {
-    transform: scale(1.3); /* Forstørrer ved hover */
+    transform: scale(1.05); /* Forstørrer ved hover */
     font-weight: bold; /* Tykkelse på font ved hover */
     box-shadow: 0 8px 16px var(--moerk-skrift); /* Forstærker skyggeeffekten ved hover */
 }
@@ -279,7 +279,7 @@ p {
 
 /* Effekter - Hover "BRYGGERIET.." knap */
 .bryggeriets-historie-knap:hover {
-    transform: scale(1.3); /* Forstørrer ved hover */
+    transform: scale(1.05); /* Forstørrer ved hover */
     font-weight: bold; /* Tykkelse på font ved hover */
     box-shadow: 0 8px 16px var(--moerk-skrift); /* Forstærker skyggeeffekten ved hover */
 }
@@ -295,7 +295,7 @@ section.billedgalleri img {
   }
 
 .billedgalleri:hover {
-    transform: scale(1.5); /*Gør billedet større, når markøren holdes over*/
+    transform: scale(1.3); /*Gør billedet større, når markøren holdes over*/
 }
 
 /* Placering - billedgalleri */
@@ -341,7 +341,7 @@ section.billedgalleri img {
 
 /* Effekter - Hover "LØBEKLUB" knap */
 .lobeklub-knap:hover {
-    transform: scale(1.3); /* Forstørrer ved hover */
+    transform: scale(1.05); /* Forstørrer ved hover */
     font-weight: bold; /* Tykkelse på font ved hover */
     box-shadow: 0 8px 16px var(--moerk-skrift); /* Forstærker skyggeeffekten ved hover */
 }
@@ -447,7 +447,7 @@ section.billedgalleri img {
 
 /* Effekter - Hover "SE UDVALGET" knap */
 .sortiment-knap:hover {
-    transform: scale(1.3); /* Forstørrer ved hover */
+    transform: scale(1.05); /* Forstørrer ved hover */
     font-weight: bold; /* Tykkelse på font ved hover */
     box-shadow: 0 8px 16px var(--moerk-skrift); /* Forstærker skyggeeffekten ved hover */
 }
@@ -478,7 +478,7 @@ section.billedgalleri-p img {
   }
 
 .billedgalleri-p img:hover {
-    transform: scale(1.2); /*Gør billedet større, når markøren holdes over*/
+    transform: scale(1.1); /*Gør billedet større, når markøren holdes over*/
 }
 
 section.billedgalleri-p p {
@@ -513,7 +513,7 @@ section.billedgalleri-p p {
 
 /* Effekter - Hover "SE UDVALGET" knap */
 .viderestiller-knap:hover {
-    transform: scale(1.3); /* Forstørrer ved hover */
+    transform: scale(1.05); /* Forstørrer ved hover */
     font-weight: bold; /* Tykkelse på font ved hover */
     box-shadow: 0 8px 16px var(--moerk-skrift); /* Forstærker skyggeeffekten ved hover */
 }
@@ -646,7 +646,7 @@ section.event-billede img {
 
 /* Effekter - Ikoner */
 .footer-ikoner:hover {
-    transform: scale(1.3); /* Forstørrer ved hover */
+    transform: scale(1.2); /* Forstørrer ved hover */
 }
 
 
@@ -672,8 +672,8 @@ section.event-billede img {
 
 }
 
-/* Mobile view - max-width er sat til der hvor "tablets and smaller screens"-starter */
-@media only screen and (max-width: 1024px) {
+/* Tablets (landskab) og mindre laptops */
+@media only screen and (max-width: 1024px)  {
 
  /* ------- STYLING AF NAVIGATION ------ */
 
@@ -850,3 +850,18 @@ section.event-billede img {
 }
 
 
+/* Mobile view - max-width er sat til der hvor "tablets and smaller screens"-starter */
+@media only screen and (max-width: 1024px) {
+
+    /* ------- STYLING AF NAVIGATION ------ */
+
+
+}
+
+
+
+/* Tablets (portræt) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+
+}
