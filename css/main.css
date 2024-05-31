@@ -542,11 +542,10 @@ section.billedgalleri-e h2 {
     padding-bottom: 2px; /* angiver afstand til nedenforstående*/
 }
 
-/*--- EVENTS - ØLSAMGNING ----*/
+/*--- EVENTS - ØLSAMGNING & LØBEKLUB ---*/
 
 /* Placering - billedgalleri */
 .events-side {
-    margin-top: 0px; /* Afstand til ovenforstående */
     margin-bottom: 60px; /* Afstand til nedenforstående */
     display: flex; /*Sørger for placering*/
     justify-content: center; /* Centrerer billedet*/
@@ -557,7 +556,24 @@ section.event-billede img {
     max-width: 1000px; /* Angiver billedernes størrelse*/
     height: auto; /* Justerer automatisk højden */
     border-radius: 5px; /* Afrundede kanter på img */
-  }
+}
+
+/* Placering - h1 */
+.artikel-events h1 {
+    text-align: center; /*Centrering af tekst*/
+}
+
+/* Placering - p  */
+.artikel-events p {
+    padding: 0 220px 20px 220px; /* Luft omkring tekst*/
+}
+
+/* Placering - h2 */
+.artikel-events h2 {
+    padding: 10px 220px 60px 220px; /* Luft omkring tekst*/
+}
+
+
 
 
 /*-------------- FOOTER --------------------*/
@@ -765,9 +781,28 @@ section.event-billede img {
         font-weight: 400; /* Skrifttykkelse*/
         right: 80px; /* Angiver afstanden fra højre */
         margin-top: 30px;
+        }
 
-}
 
+
+/* ---- EVENTS - HTML ---- */
+
+        /* Placering - p  */
+        .artikel-events p {
+            padding: 0 100px 20px 100px;
+        }
+
+        /* Placering - h2 */
+        .artikel-events h2 {
+            padding: 10px 100px 20px 100px;
+        }
+
+        /* Styling - billedgalleri */
+        section.event-billede img {
+            max-width: 750px; /* Angiver billedernes størrelse*/
+            height: auto; /* Justerer automatisk højden */
+            border-radius: 5px; /* Afrundede kanter på img */
+        }
 
 
 
