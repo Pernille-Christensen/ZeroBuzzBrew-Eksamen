@@ -955,20 +955,10 @@ section.event-billede img {
 /* --------- STYLING AF FORSIDE ---------*/
 
     /* Styling - Baggrundsbillede, på forsiden */
-    .forside-responsiv {
-        width: 100%; /* Sikrer at billedet bredde følger browserens*/
-        display: block; /*viser dette billede, skjuler det andet*/
-        z-index: 0; /* Sikrer at billedet placeres bag dropdown */
-        position: relative; /* Sørger for, at z-index anvendes korrekt */
-        }
-
-    .forside-img {
-        display: none; /*skjuler dette billede*/
-    }
-     
+    
     /*Ændring i størrelser på knap*/
     .nyheder-knap {
-        bottom: 90px; /* Angiver afstanden fra bunden */
+        bottom: 60px; /* Angiver afstanden fra bunden */
         border-radius: 15px; /* Rundede hjørner */ 
         right: 40px; /* Angiver afstanden fra højre */
         font-size: 22px; /* Skriftstørrelse */
@@ -1150,10 +1140,10 @@ section.event-billede img {
   
     /*Ændring i størrelser på knap*/
     .nyheder-knap {
-        bottom: 40px; /* Angiver afstanden fra bunden */
+        bottom: 70px; /* Angiver afstanden fra bunden */
         border-radius: 15px; /* Rundede hjørner */ 
         right: 40px; /* Angiver afstanden fra højre */
-        font-size: 22px; /* Skriftstørrelse */
+        font-size: 24px; /* Skriftstørrelse */
         font-weight: 600; /* Skrifttykkelse*/
     }
 
@@ -1164,7 +1154,7 @@ section.event-billede img {
    
     /*Ænddring i overskrift*/
     .forside-midt h1 {
-        font-size: 35px; /*Skriftstørrelse mindre*/
+        font-size: 38px; /*Skriftstørrelse mindre*/
         font-weight: 800;
         padding-top: 50px; /*Afstand til billede ovenfor*/
     }
