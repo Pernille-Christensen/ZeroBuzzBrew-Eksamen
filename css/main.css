@@ -488,7 +488,7 @@ section.billedgalleri-p p {
 }
 
 /* Placering - billedgalleri */
-#billedgalleri-produkter {
+.billedgalleri-produkter {
     margin-top: 10px; /* Afstand til ovenforstående */
     margin: 10px 100px 20px 100px; /* Afstand til nedenforstående */
     display: flex;
@@ -1031,7 +1031,7 @@ section.event-billede img {
     }
 
     .artikel-bryggeri h2 {
-        padding-bottom: 5px; /* Mindre afstand mellem overskrifter */
+        padding-bottom: 15px; /* Mindre afstand mellem overskrifter */
     }
 
     .h2-luft {
