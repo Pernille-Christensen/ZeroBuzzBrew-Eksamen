@@ -1263,6 +1263,11 @@ section.event-billede img {
     .artikel-bryggeri h1 {
         font-size: 30px; /*Skriftstørrelse*/
     }
+    
+    /*Fjerner "tilbage-pil" i telefon*/
+    .tilbage-svg {
+        display: none; /*Skjuler element*/
+    }
 
 /* ---- EVENTS - HTML ---- */
 
